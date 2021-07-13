@@ -1,4 +1,5 @@
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=The1TrueJoe&layout=compact&theme=radical)](https://github.com/The1TrueJoe/github-readme-stats)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=The1TrueJoe&layout=compact&theme=radical)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=The1TrueJoe&count_private=true&show_icons=true&theme=radical)
 
 <!--
 **The1TrueJoe/The1TrueJoe** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
