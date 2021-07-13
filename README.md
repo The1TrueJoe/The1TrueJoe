@@ -1,6 +1,11 @@
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=The1TrueJoe&count_private=true&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=The1TrueJoe&layout=compact&theme=radical)
 
+<p align="center"> 
+  Visitor count<br>
+  <img src="https://profile-counter.glitch.me/The1TrueJoe/count.svg" />
+</p>
+
 <!--
 **The1TrueJoe/The1TrueJoe** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
