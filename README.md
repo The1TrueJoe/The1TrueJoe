@@ -2,6 +2,7 @@
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=The1TrueJoe&count_private=true&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=The1TrueJoe&layout=compact&theme=radical)
+![wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=The1TrueJoe)](https://github.com/anuraghazra/github-readme-stats)
 
 ### Tech
 
