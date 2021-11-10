@@ -20,7 +20,7 @@
 
 ### Accurate Information
 
-<p align="center"> 
+<p align="left"> 
   Totally not botted visitor count<br>
   <img src="https://profile-counter.glitch.me/The1TrueJoe/count.svg" />
 </p>
