@@ -3,11 +3,6 @@
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=The1TrueJoe&count_private=true&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=The1TrueJoe&layout=compact&theme=radical)
 
-<p align="center"> 
-  Visitor count<br>
-  <img src="https://profile-counter.glitch.me/The1TrueJoe/count.svg" />
-</p>
-
 ### Tech
 
 ![Java](https://img.shields.io/badge/-Java-White?style=flat-square&logo=java&color=orange&logoColor=white)
@@ -22,6 +17,13 @@
 ![VMware](https://img.shields.io/badge/-VMware-%23F05032?style=flat-square&logo=vmware&color=yellow&logoColor=white)
 ![EAGLE](https://img.shields.io/badge/-EAGLE-%23F05032?style=flat-square&logo=autodesk-autodesk&color=yellow&logoColor=orange)
 ![Inventor](https://img.shields.io/badge/-Inventor-%23F05032?style=flat-square&logo=autodesk-autodesk&color=yellow&logoColor=orange)
+
+# Accurate Information
+
+<p align="center"> 
+  Totally not botted visitor count<br>
+  <img src="https://profile-counter.glitch.me/The1TrueJoe/count.svg" />
+</p>
 
 <!-- https://simpleicons.org/ -->
 
