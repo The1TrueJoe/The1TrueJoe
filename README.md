@@ -1,9 +1,49 @@
+# Joseph Telaak (The1TrueJoe)
+
+Hello
+
+## Projects
+
+### Potentially Problematic Projects
+> <I>Used Ethically</I><br>
+
+- [DA2](https://github.com/The1TrueJoe/DA2-Public-Code) Automation platform designed to run on many real/virtualized hosts.  (Public Version - Does Not Include Current Use-Case)
+- [CMD Bypass Script](https://github.com/The1TrueJoe/CMD-Bypass) Script to get around an windows policy that allows scripts but not command prompt
+- [GovieScore](https://github.com/The1TrueJoe/GovieScore) Social Credit Score test
+
+### Projects
+
+- [8-Bit Computer](https://github.com/The1TrueJoe/8Bit-Computer) 8-Bit Computer that I built using a 6502
+- [ROV](https://github.com/The1TrueJoe/ROV) Newer version of my ROV that uses sensors and CAN
+- [ROV (Old Versions)](https://github.com/The1TrueJoe/ROV-OLD) Old Version of my ROV
+
+### School Stuff
+
+- [GSSM Assignments](https://github.com/The1TrueJoe/SCGSSM-Assignments) Assignments done at Governors School for Science and Math
+- [Database Case Studeis](https://github.com/The1TrueJoe/Database-Case-Studies) Separate repository for GSSM CSC170's Case Studies
+- [CFHS Assignments](https://github.com/The1TrueJoe/CFHS-Assignments) Assignments done at Carolina Forest High School
+
+### Robotics
+
+- [FTC Utils](https://github.com/The1TrueJoe/FTCUtils) Misc utils for FTC Robots
+
+### Misc Side Projects
+
+- [Flourescent Strober](https://github.com/The1TrueJoe/RelayFlasher) Light flasher using a strobe
+- [Subliminal Message](https://github.com/The1TrueJoe/SubliminalMessager) Hidden speaker that can play Text-To-Speech messages over Telnet
+- [Door Logger](https://github.com/The1TrueJoe/DoorLogger) Bypasses access control to provide remote unlock and access logging
+
+### And More to Come! 
+Lots of stuff I need to find and upload!
+
+<br>
+
 ### Stats
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=The1TrueJoe&count_private=true&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=The1TrueJoe&layout=compact&theme=radical)
 
-### Tech
+### Ablities
 
 ![Java](https://img.shields.io/badge/-Java-White?style=flat-square&logo=java&color=orange&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-White?style=flat-square&logo=python&color=blue&logoColor=white)
