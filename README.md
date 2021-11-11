@@ -38,11 +38,7 @@ Lots of stuff I need to find and upload!
 
 <br>
 
-### Stats
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=The1TrueJoe&count_private=true&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=The1TrueJoe&layout=compact&theme=radical)
-
+[Stats](https://github.com/The1TrueJoe/The1TrueJoe/blob/main/STATS.md)
 ### Ablities
 
 ![Java](https://img.shields.io/badge/-Java-White?style=flat-square&logo=java&color=orange&logoColor=white)
