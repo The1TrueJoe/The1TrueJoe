@@ -2,6 +2,9 @@
 
 Hello
 
+
+[Stats](https://github.com/The1TrueJoe/The1TrueJoe/blob/main/STATS.md)
+
 ## Projects
 
 ### Potentially Problematic Projects
@@ -38,7 +41,6 @@ Lots of stuff I need to find and upload!
 
 <br>
 
-[Stats](https://github.com/The1TrueJoe/The1TrueJoe/blob/main/STATS.md)
 ### Ablities
 
 ![Java](https://img.shields.io/badge/-Java-White?style=flat-square&logo=java&color=orange&logoColor=white)
