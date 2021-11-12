@@ -1,9 +1,12 @@
 # Joseph Telaak (The1TrueJoe)
 
-Hello
-
+Hello!
 
 [Stats](https://github.com/The1TrueJoe/The1TrueJoe/blob/main/STATS.md)
+
+## Links
+
+- [HackerRank](https://www.hackerrank.com/jtelaak22)
 
 ## Projects
 
