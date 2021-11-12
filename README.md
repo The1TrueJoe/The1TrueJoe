@@ -32,7 +32,7 @@ Hello
 
 ### Misc Competitions
 
-- [ACSL 2021]((https://github.com/The1TrueJoe/ACSL-Fibonacci_Clock) ACSL 2021 Fibonnaci Clock
+- [ACSL 2021](https://github.com/The1TrueJoe/ACSL-Fibonacci_Clock) ACSL 2021 Fibonnaci Clock
 
 ### Misc Side Projects
 
