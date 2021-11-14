@@ -13,7 +13,7 @@ Hello!
 ### Potentially Problematic Projects
 > <I>Used Ethically</I><br>
 
-- [DA2](https://github.com/The1TrueJoe/DA2-Public-Code) Automation platform designed to run on many real/virtualized hosts.  (Public Version - Does Not Include Current Use-Case)
+- **(Largest Project) [DA2](https://github.com/The1TrueJoe/DA2-Public-Code) Automation platform designed to run on many real/virtualized hosts.  (Public Version - Does Not Include Current Use-Case)
 - [CMD Bypass Script](https://github.com/The1TrueJoe/CMD-Bypass) Script to get around an windows policy that allows scripts but not command prompt
 - [GovieScore](https://github.com/The1TrueJoe/GovieScore) Social Credit Score test
 
