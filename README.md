@@ -37,7 +37,7 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 
 - [ACSL 2021](https://github.com/The1TrueJoe/ACSL-Fibonacci_Clock) ACSL 2021 Fibonnaci Clock
 
-### Misc Side Projects
+### Mini Side Projects
 
 - [Flourescent Strober](https://github.com/The1TrueJoe/RelayFlasher) Light flasher using a strobe
 - [Subliminal Message](https://github.com/The1TrueJoe/SubliminalMessager) Hidden speaker that can play Text-To-Speech messages over Telnet
