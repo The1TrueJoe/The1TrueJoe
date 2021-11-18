@@ -48,20 +48,27 @@ Lots of stuff I need to find and upload!
 
 <br>
 
-### Ablities
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> 
+  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> 
+  <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> 
+  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+  <a href="https://arduino.cc" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/arduino/arduino-original.svg" alt="arduino" width="40" height="40"/> </a>
+  <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> 
+  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> 
+  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> 
+  
+  
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
+  <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>  
+  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> 
+  
+  
+  
+ 
+  
+</p>
 
-![Java](https://img.shields.io/badge/-Java-White?style=flat-square&logo=java&color=orange&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-White?style=flat-square&logo=python&color=blue&logoColor=white)
-![P4](https://img.shields.io/badge/-P4-White?style=flat-square&logo=P4&color=purple&logoColor=white)
-![C](https://img.shields.io/badge/-C-White?style=flat-square&logo=C&color=green&logoColor=white)
-![C++](https://img.shields.io/badge/-C++-White?style=flat-square&logo=cplusplus&color=blue&logoColor=white)
-![Arduino](https://img.shields.io/badge/-Arduino-White?style=flat-square&logo=arduino&color=teal&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-%23F05032?style=flat-square&logo=git&logoColor=%23ffffff)
-![VS Code](https://img.shields.io/badge/-VSCode-%23007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![CCNA](https://img.shields.io/badge/-CCNA-%23F05032?style=flat-square&logo=cisco&color=teal&logoColor=white)
-![VMware](https://img.shields.io/badge/-VMware-%23F05032?style=flat-square&logo=vmware&color=yellow&logoColor=white)
-![EAGLE](https://img.shields.io/badge/-EAGLE-%23F05032?style=flat-square&logo=autodesk-autodesk&color=yellow&logoColor=orange)
-![Inventor](https://img.shields.io/badge/-Inventor-%23F05032?style=flat-square&logo=autodesk-autodesk&color=yellow&logoColor=orange)
 
 ### Accurate Information
 
