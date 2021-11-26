@@ -1,6 +1,6 @@
 # Joseph Telaak (The1TrueJoe)
 
-Hello! My name is Joseph Telaak and I am an extremely passionate computer and circuit enthusiast. I've worked on projects ranging from an 8-Bit Computer to a botnet. My favorite niche of computer science/engineering can probably be summed up as "Systems Architecture." I enjoy working with [hardware](https://github.com/The1TrueJoe/8Bit-Computer), programming at a [low level](https://github.com/The1TrueJoe/8Bit-Computer), designing network architecture, building [software systems](https://github.com/The1TrueJoe/DA2-Public-Code), and building [robot control systems](https://github.com/The1TrueJoe/ROV). All of my projects and networking shenanigans are done ethically. I try not to be a menace to my school's IT department anymore unless I have permission (it has almost gotten me into some trouble before).
+Hello! My name is Joseph Telaak and I am an extremely passionate computer and circuit enthusiast. I've worked on projects ranging from an 8-Bit Computer to a botnet. My favorite niche of computer science/engineering can probably be summed up as "Systems Architecture." I enjoy working with [hardware](https://github.com/The1TrueJoe/8Bit-Computer), programming at a [low level](https://github.com/The1TrueJoe/8Bit-Computer), designing network architecture, building [software systems](https://github.com/DA2Botnet), and building [robot control systems](https://github.com/The1TrueJoe/ROV). All of my projects and networking shenanigans are done ethically. I try not to be a menace to my school's IT department anymore unless I have permission (it has almost gotten me into some trouble before).
 
 [Stats](https://github.com/The1TrueJoe/The1TrueJoe/blob/main/STATS.md)
 
@@ -13,7 +13,7 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 ### Potentially Problematic Projects
 > <I>Used Ethically</I><br>
 
-- **(Largest Project) [DA2](https://github.com/The1TrueJoe/DA2-Public-Code) Automation platform designed to run on many real/virtualized hosts.  (Public Version - Does Not Include Current Use-Case)
+- **(Largest Project) [DA2](https://github.com/DA2Botnet) Automation platform designed to run on many real/virtualized hosts.  (Public Version - Does Not Include Current Use-Case)
 - [CMD Bypass Script](https://github.com/The1TrueJoe/CMD-Bypass) Script to get around an windows policy that allows scripts but not command prompt
 - [GovieScore](https://github.com/The1TrueJoe/GovieScore) Social Credit Score test
 
