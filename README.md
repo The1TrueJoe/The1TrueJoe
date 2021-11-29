@@ -26,8 +26,8 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 ### School Stuff
 
 - [GSSM Assignments](https://github.com/The1TrueJoe/SCGSSM-Assignments) Assignments done at Governors School for Science and Math
-  - [Database Case Studeis](https://github.com/The1TrueJoe/Database-Case-Studies) Separate repository for GSSM CSC170's Case Studies
-  - [SML Compiler(https://github.com/The1TrueJoe/SCGSSM-Assignments/tree/main/CSC111/SML) Compiler for Simple Machine Language (CSC111 Final Project)
+  - [Database Case Studies](https://github.com/The1TrueJoe/Database-Case-Studies) Separate repository for GSSM CSC170's Case Studies
+  - [SML Compiler](https://github.com/The1TrueJoe/SCGSSM-Assignments/tree/main/CSC111/SML) Compiler for Simple Machine Language (CSC111 Final Project)
 - [CFHS Assignments](https://github.com/The1TrueJoe/CFHS-Assignments) Assignments done at Carolina Forest High School
 
 ### Robotics
