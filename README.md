@@ -15,7 +15,7 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 
 - **(Largest Project) [DA2](https://github.com/DA2Botnet) Automation platform designed to run on many real/virtualized hosts.  (Public Version - Does Not Include Current Use-Case)
 - [CMD Bypass Script](https://github.com/The1TrueJoe/CMD-Bypass) Script to get around an windows policy that allows scripts but not command prompt
-- [GovieScore](https://github.com/The1TrueJoe/GovieScore) Social Credit Score test
+- [SocialScore](https://github.com/The1TrueJoe/GovieScore) Social Credit Score test
 
 ### Projects
 
