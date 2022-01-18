@@ -10,12 +10,7 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 
 ## Projects
 
-### Potentially Problematic Projects
-> <I>Used Ethically</I><br>
-
 - **(Largest Project) [DA2](https://github.com/DA2Botnet) Automation platform designed to run on many real/virtualized hosts.  (Public Version - Does Not Include Current Use-Case)
-- [CMD Bypass Script](https://github.com/The1TrueJoe/CMD-Bypass) Script to get around an windows policy that allows scripts but not command prompt
-<!--- [SocialScore](https://github.com/The1TrueJoe/GovieScore) Social Credit Score test -->
 
 ### Projects
 
@@ -29,6 +24,7 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
   - [Database Case Studies](https://github.com/The1TrueJoe/Database-Case-Studies) Separate repository for GSSM CSC170's Case Studies
   - [SML Compiler](https://github.com/The1TrueJoe/SCGSSM-Assignments/tree/main/CSC111/SML) Compiler for Simple Machine Language (CSC111 Final Project)
 - [CFHS Assignments](https://github.com/The1TrueJoe/CFHS-Assignments) Assignments done at Carolina Forest High School
+  - [CMD Bypass Script](https://github.com/The1TrueJoe/CMD-Bypass) Script to get around an windows policy that allows scripts but not command prompt
 
 ### Robotics
 
