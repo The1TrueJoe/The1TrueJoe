@@ -14,7 +14,7 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 
 ### Projects
 
-- [8-Bit Computer](https://github.com/The1TrueJoe/8Bit-Computer) 8-Bit Computer that I built using a 6502
+- [8-Bit Computer](https://github.com/The1TrueJoe/8Bit-Computer) 8-Bit Computer with VGA graphics built on breadboards
 - [ROV](https://github.com/The1TrueJoe/ROV) Newer version of my ROV that uses sensors and CAN
 - [ROV (Old Versions)](https://github.com/The1TrueJoe/ROV-OLD) Old Version of my ROV
 
@@ -36,9 +36,11 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 
 ### Mini Side Projects
 
+- [RS485 Monitor](https://github.com/The1TrueJoe/RS485-Monitor) Monitors an RS485 bus
 - [Flourescent Strober](https://github.com/The1TrueJoe/RelayFlasher) Light flasher using a strobe
 - [Subliminal Message](https://github.com/The1TrueJoe/SubliminalMessager) Hidden speaker that can play Text-To-Speech messages over Telnet
 - [Door Logger](https://github.com/The1TrueJoe/DoorLogger) Bypasses access control to provide remote unlock and access logging
+- [Simple Kernel](https://github.com/The1TrueJoe/Simple-Kernel) Simple Bootable Kernel
 
 ### And More to Come! 
 Lots of stuff I need to find and upload!
