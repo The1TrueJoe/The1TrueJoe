@@ -1,18 +1,17 @@
 # Joseph Telaak (The1TrueJoe)
 
+<!--
 Hello! My name is Joseph Telaak and I am an extremely passionate computer and circuit enthusiast. I've worked on projects ranging from an 8-Bit Computer to a botnet. My favorite niche of computer science/engineering can probably be summed up as "Systems Architecture." I enjoy working with [hardware](https://github.com/The1TrueJoe/8Bit-Computer), programming at a [low level](https://github.com/The1TrueJoe/8Bit-Computer), designing network architecture, building [software systems](https://github.com/DA2Botnet), and building [robot control systems](https://github.com/The1TrueJoe/ROV). All of my projects and networking shenanigans are done ethically. I try not to be a menace to my school's IT department anymore unless I have permission (it has almost gotten me into some trouble before).
+-->
 
 [Stats](https://github.com/The1TrueJoe/The1TrueJoe/blob/main/STATS.md)
 
-## Links
-
-- [HackerRank](https://www.hackerrank.com/jtelaak22)
-
 ## Projects
 
-- **(Largest Project) [DA2](https://github.com/DA2Botnet) Automation platform designed to run on many real/virtualized hosts.  (Public Version - Does Not Include Current Use-Case)
+- **[DA2](https://github.com/DA2Botnet) Automation platform designed to run on many real/virtualized hosts.  (Public Version - Does Not Include Current Use-Case)
+- **[Self-Driving Golf Cart](https://github.com/Autonomous-GolfCart-Kit) Self-Driving Golf Cart
 
-### Projects
+### Other Main Projects
 
 - [8-Bit Computer](https://github.com/The1TrueJoe/8Bit-Computer) 8-Bit Computer with VGA graphics built on breadboards
 - [ROV](https://github.com/The1TrueJoe/ROV) Newer version of my ROV that uses sensors and CAN
@@ -29,10 +28,6 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 ### Robotics
 
 - [FTC Utils](https://github.com/The1TrueJoe/FTCUtils) Misc utils for FTC Robots
-
-### Misc Competitions
-
-- [ACSL 2021](https://github.com/The1TrueJoe/ACSL-Fibonacci_Clock) ACSL 2021 Fibonnaci Clock
 
 ### Mini Side Projects
 
