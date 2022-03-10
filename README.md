@@ -8,7 +8,7 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 
 ## Projects
 
-- **[DA2](https://github.com/DA2Botnet) Automation platform designed to run on many real/virtualized hosts.  (Public Version - Does Not Include Current Use-Case)
+- **[DA2](https://github.com/DA2Botnet) Automation platform designed to run on many virtualized hosts.
 - **[Self-Driving Golf Cart](https://github.com/Autonomous-GolfCart-Kit) Self-Driving Golf Cart
 
 ### Other Main Projects
