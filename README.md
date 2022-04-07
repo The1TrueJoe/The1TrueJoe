@@ -28,9 +28,9 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 
 ### Robotics
 
-- [FRC 4072: 2020](https://github.com/RoboKatz-4073/FRC-2020-Season) 2020 Season Code
-- [FTC 772: 2021](https://github.com/FTC-Team-772/2021-Season) 2021 Season Code
-- [FTC 327: 2022](https://github.com/FTC-Team-327/2022-Season) 2022 Season Code
+- [FRC 407](https://github.com/RoboKatz-4073/FRC-2020-Season) 2020 Season Code
+- [FTC 772](https://github.com/FTC-Team-772/2021-Season) 2021 Season Code
+- [FTC 327](https://github.com/FTC-Team-327/2022-Season) 2022 Season Code
 - [FTC Utils](https://github.com/The1TrueJoe/FTCUtils) Misc utils for FTC Robots
 
 ### Mini Side Projects
