@@ -36,10 +36,12 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 ### Mini Side Projects
 
 - [CAN Monitor](https://github.com/The1TrueJoe/CAN-Monitor) Monitors and Injects Frames into a CAN Bus
+- [Virtual TTY](https://github.com/The1TrueJoe/VirtualTTY-Echo) Creates a virtual serial port for debugging puropses
 
 ### And More to Come! 
 Lots of stuff I need to find and upload!
 
+<!--
 <br>
 
 <h3 align="left">Languages and Tools:</h3>
@@ -58,6 +60,8 @@ Lots of stuff I need to find and upload!
   Totally not botted visitor count<br>
   <img src="https://profile-counter.glitch.me/The1TrueJoe/count.svg" />
 </p>
+
+-->
 
 <!-- https://simpleicons.org/ -->
 
