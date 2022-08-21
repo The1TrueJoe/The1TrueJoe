@@ -8,13 +8,13 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 
 ## Projects
 
-- **[DA2](https://github.com/DA2Botnet) Automation platform designed to run on many virtualized hosts.
 - **[Self-Driving Golf Cart](https://github.com/GSSM-AutoGolfCart) Self-Driving Golf Cart
+- **[DA2](https://github.com/DA2Botnet) (WIP) Automation platform designed to run on many virtualized hosts.
 
 ### Other Main Projects
 
 - [8-Bit Computer](https://github.com/The1TrueJoe/8Bit-Computer) 8-Bit Computer with VGA graphics built on breadboards
-- [ROV](https://github.com/The1TrueJoe/ROV) Newer version of my ROV that uses sensors and CAN
+- [ROV](https://github.com/The1TrueJoe/ROV) Newer version of my ROV
 - [ROV (Old Versions)](https://github.com/The1TrueJoe/ROV-OLD) Old Version of my ROV
 
 ### School Stuff
