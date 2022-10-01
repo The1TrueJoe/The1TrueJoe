@@ -8,7 +8,7 @@ Hello! My name is Joseph Telaak and I am an extremely passionate computer and ci
 
 ## Projects
 
-- **[Self-Driving Golf Cart](https://github.com/GSSM-AutoGolfCart) Self-Driving Golf Cart
+- **[Self-Driving Golf Cart](https://github.com/AutoGolfCart) Self-Driving Golf Cart
 - **[DA2](https://github.com/DA2Botnet) (WIP) Automation platform designed to run on many virtualized hosts.
 
 ### Other Main Projects
