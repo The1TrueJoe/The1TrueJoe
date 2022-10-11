@@ -3,7 +3,7 @@
 - 🏫 School
   - Computer Engineering Student at UofSC
   - SC Governor's School for Science + Math Alum
-- 🚙 Currently working on a [self driving golf cart](autogolfc.art) with funding from Google
+- 🚙 Currently working on a [self driving golf cart](https://autogolfc.art) with funding from Google
 - 🌱 Interests include
   - ⚡️ Embedded Systems
   - 💻 Computer Architecture
