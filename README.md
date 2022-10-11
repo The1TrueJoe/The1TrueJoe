@@ -11,7 +11,7 @@
   - 🤖 Robotics
   - 🧠 Machine Learning
 - 📫 Contact me at **jtelaak@sc.edu**
-- 🛠 See some of my [projects](PROJECTS.MD)
+- 🛠 See some of my [projects](PROJECTS.md)
   - [Self-Driving Golf Cart](https://github.com/AutoGolfCart)
   - [8-Bit Computer](https://github.com/The1TrueJoe/8Bit-Computer)
   - [ROV](https://github.com/The1TrueJoe/ROV)
