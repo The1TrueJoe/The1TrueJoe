@@ -1,5 +1,4 @@
 name: Pages Deployment
-
 on: [push]
 
 permissions:
@@ -8,11 +7,13 @@ permissions:
   id-token: write
 
 jobs:
-  build_latex:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v3
+      - name: Checkout your repository using git
+        uses: actions/checkout@v2
+
+      # Latex
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
@@ -23,13 +24,6 @@ jobs:
           name: PDF
           path: resume.pdf
           
-  build:
-    needs: build_latex
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v2
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
