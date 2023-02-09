@@ -23,23 +23,24 @@ jobs:
         with:
           root_file: resume.tex
 
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume
+          path: resume.pdf
+
       - name: Commit files
         run: |
+          git add resume.pdf
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -a -m "Add resume"
+          git commit -m "Add resume"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh_pages
-
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: PDF
-          path: resume.pdf
           
   deploy:
     needs: build
