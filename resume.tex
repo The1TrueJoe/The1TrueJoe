@@ -1,0 +1,176 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://telaak.dev/}{\Large Joseph Telaak}} & Email : \href{mailto:joseph@sc.edi}{joseph@sc.edu}\\
+  \href{https://linkedin.com/in/jtelaak/}{https://linkedin.com/in/jtelaak/} & Mobile : 704-351-7396 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of South Carolina}{Columbia, SC}
+      {BSE in Computer Engineering, Minor in Math:  GPA: 4.00}{Aug. 2022 -- May 2024 (Exp)}
+    \resumeSubheading
+      {South Carolina Governor's School for Science and Mathematics}{Hartsville, SC}
+      {High School Diploma, Concentration in CS and Math;  GPA: 3.8}{Aug. 2020 - May 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {South Carolina Governors School for Science and Mathematics}{Hartsville, SC}
+      {Instructor}{Jan. 2023}
+      \resumeItemListStart
+        \resumeItem{Engineering Interim}
+          {I helped students design and build various projects across a variety of disciplines.}
+        \resumeItem{Engineering Projects Course}
+          {Helped design the course for permanent placement within the course catalog.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {SCGSSM Autonomous Golf Cart Research}{Hartsville, SC}
+      {Founder and Researcher}{Jan. 2022 - Feb. 2023}
+      \resumeItemListStart
+        \resumeItem{Project Managment}
+          {Managed funding (Over \$50k), part procurement, and technical design.}
+        \resumeItem{PCB Design}
+          {Designed custom printed circuit boards to create a retrofit drive-by-wire control system for multiple models of golf carts.}
+        \resumeItem{Algorithmic Design}
+          {Wrote software to help the vehicle to avoid collisions, navigate autonomously, and offer teleoperated control.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {USC Cyberinfrastructure Lab}{Columbia, SC}
+      {Research Assistant}{Summer 2021}
+      \resumeItemListStart
+        \resumeItem{Network Testing}
+          {Created scripts to automate throughput and packet loss measurements.}
+        \resumeItem{P4}
+          {Developed applications for P4 programmable data-plane switches.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------VOLUNTEERING-----------------
+\section{Volunteering}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SC FIRST Robotics}{Columbia, SC}
+      {Various Volunteer Roles}{Jan. 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Field Technical Assistant}
+          {Helped run and manage field operations. Assisted students with robot programming and troubleshooting.}
+        \resumeItem{Robot Inspector}
+          {Inspected each team's robot to ensure a safe and fair competition.}
+        \resumeItem{Various Roles}
+          {Various other roles like pit administration and field reset.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {South Carolina Governors School for Science and Mathematics}{Hartsville, SC}
+      {SPARK! Leader and Instructor}{Aug. 2020 - May 2022}
+      \resumeItemListStart
+        \resumeItem{Python Bootcamp}
+          {Led and taught an 8-week Python course to SC middle and high school students.}
+        \resumeItem{CS and Robotics}
+          {Taught various courses in CS and robotics to SC middle and high school students.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Self-Driving Golf Cart}
+      {Retrofit golf cart with a drive-by-wire system to create an Advanced Driver Assistance System (ADAS) with autonomous capabilities.}
+    \resumeSubItem{Open-Source Rocket Flight Computer}
+      {"Hackable" rocket flight computer to enable users to learn flight control and embedded systems.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: C/C++, Python, Java, P4, SQL, MIPS, x86, VHDL}
+   }
+   \item{
+     \textbf{Technologies}{: ROS, Quartus, FPGA, STM32, MATLAB, Altium}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
