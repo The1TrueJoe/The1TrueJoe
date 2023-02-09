@@ -1,5 +1,12 @@
 name: Pages Deployment
+
 on: [push]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
