@@ -1,4 +1,4 @@
-name: Build LaTeX document
+name: Pages Deployment
 on: [push]
 jobs:
   build_latex:
