@@ -17,20 +17,6 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v2
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: resume.tex
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: resume
-          path: resume.pdf
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh_pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
