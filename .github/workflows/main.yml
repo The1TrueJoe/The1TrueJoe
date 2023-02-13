@@ -29,11 +29,6 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: '.'
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh_pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
