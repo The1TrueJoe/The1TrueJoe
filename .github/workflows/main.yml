@@ -6,7 +6,9 @@ on:
       - main
   workflow_dispatch:
 
-permissions: write-all
+permissions:
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -16,7 +18,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
