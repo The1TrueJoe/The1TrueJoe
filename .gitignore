@@ -1,1 +1,10 @@
+# DS_Store
 .DS_Store
+
+# Latex compilation files
+.aux
+.fdb_latexmk
+.fls
+.log
+.out
+.synctex.gz
