@@ -43,6 +43,12 @@
   }
 }
 
+\newcommand{\resumeItemLine}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -51,21 +57,20 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubheadingEdu}[5]{
+\newcommand{\resumeSubheadingEdu}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-      & \textit{\small#5} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubheadingEduTwo}[6]{
+\newcommand{\resumeSubheadingEduTwo}[5]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-      \textit{\small#5} & \textit{\small #6} \\
+      \textit{\small#5} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -94,16 +99,16 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    % \resumeSubheadingEduTwo
-    %   {University of South Carolina}{Columbia, SC}
-    %   {BSE in Computer Engineering, Minor in Math}{Aug. 2022 -- May 2025 (Exp)}
-    %   {BS in Engineering Physics}{GPA: 4.0}
-    \resumeSubheading
+    \resumeSubheadingEduTwo
       {University of South Carolina}{Columbia, SC}
-      {BSE in Computer Engineering, Minor in Math; GPA: 4.0}{Aug. 2022 -- May 2025 (Exp)}
-    \resumeSubheading
+      {BSE in Computer Engineering; (GPA: 4.0)}{Aug. 2022 -- May 2025 (Exp)}
+      {BS in Mathematics; (GPA: 4.0)}
+    % \resumeSubheading
+    %   {University of South Carolina}{Columbia, SC}
+    %   {BSE in Computer Engineering, Minor in Math; GPA: 4.0}{Aug. 2022 -- May 2025 (Exp)}
+    \resumeSubheadingEdu
       {South Carolina Governor's School for Science and Mathematics}{Hartsville, SC}
-      {High School Diploma, Concentration in CS and Math; GPA: 3.8}{Aug. 2020 - May 2022}
+      {High School Diploma, Concentration in CS and Math; (GPA: 3.8)}{Aug. 2020 - May 2022}
   \resumeSubHeadingListEnd
 
 
@@ -113,41 +118,44 @@
 
     \resumeSubheading
       {FIRST SC}{Columbia, SC}
-      {Alumni Board}{Feb. 2023 - Present}
+      {Founding Alumni Board Member}{Feb. 2023 - Present}
       \resumeItemListStart
-        \resumeItem{Founding Board Member}
+        \resumeItemLine
           {Helping start the alumni relations board for FIRST SC.}
+        \resumeItemLine
+          {Planning events to increase alumni engagement.}
     \resumeItemListEnd
 
     \resumeSubheading
       {USC SyReX Lab}{Columbia, SC}
       {Undergraduate Researcher}{Feb. 2023 - Present}
       \resumeItemListStart
-        \resumeItem{Milimeter Wave Communications}
-          {Used mmwave to localize autonomous robots in all-weather conditions.}
-        \resumeItem{Data Analysis}
-          {Wrote MATLAB scripts to analyze data.}
+        \resumeItemLine
+          {Used mmWave radar to detect and track objects on the road.}
+        \resumeItemLine
+          {Created a dataset of radar, LiDAR, GPS, and video data}
+
     \resumeItemListEnd
 
     \resumeSubheading
       {South Carolina Governor's School for Science and Mathematics}{Hartsville, SC}
       {Instructor}{Jan. 2023}
       \resumeItemListStart
-        \resumeItem{Engineering Interim}
-          {I helped students design and build various projects across a variety of disciplines.}
-        \resumeItem{Engineering Projects Course}
-          {Helped design the course for permanent placement within the course catalog.}
+        % \resumeItem{Engineering Interim}
+        %   {I helped students design and build various projects across a variety of disciplines.}
+        \resumeItemLine%{Engineering Projects Course}
+          {Helped design and assist in student instruction during the GSSM Interim.}
       \resumeItemListEnd
 
     \resumeSubheading
       {SCGSSM Autonomous Golf Cart Research}{Hartsville, SC}
       {Founder and Team Lead}{Jan. 2022 - Feb. 2023}
       \resumeItemListStart
-        \resumeItem{Project Managment}
+        \resumeItemLine
           {Managed funding (Over \$50k), part procurement, and technical design.}
-        \resumeItem{PCB Design}
+        \resumeItemLine
           {Designed custom printed circuit boards to create a retrofit drive-by-wire control system for multiple models of golf carts.}
-        \resumeItem{Algorithmic Design}
+        \resumeItemLine
           {Wrote software to help the vehicle to avoid collisions, navigate autonomously, and offer teleoperated control.}
       \resumeItemListEnd
 
@@ -155,9 +163,9 @@
       {USC Cyberinfrastructure Lab}{Columbia, SC}
       {Research Assistant}{Summer 2021}
       \resumeItemListStart
-        \resumeItem{Network Testing}
+        \resumeItemLine
           {Created scripts to automate throughput and packet loss measurements.}
-        \resumeItem{P4}
+        \resumeItemLine
           {Developed applications for P4 programmable data-plane switches.}
       \resumeItemListEnd
 
@@ -170,9 +178,9 @@
       {FIRST Robotics}{Columbia, SC}
       {Various Volunteer Roles}{Jan. 2022 - Present}
       \resumeItemListStart
-        \resumeItem{Mentor}
+        \resumeItemLine
           {Used 4 years of FIRST experience to mentor top-ranking FTC teams in SC.}
-        \resumeItem{Field Technical Assistant}
+        \resumeItemLine
           {Managed field operations. Assisted students with robot troubleshooting.}
         % \resumeItem{Judge}
         %   {Interviewed teams and helped decide the winners of the awards.}
@@ -182,9 +190,9 @@
       {SCGSSM SPARK!}{Hartsville, SC}
       {SPARK! Leader and Instructor}{Aug. 2020 - May 2022}
       \resumeItemListStart
-        \resumeItem{Python Bootcamp}
+        \resumeItemLine
           {Led and taught an 8-week Python course to SC middle and high school students.}
-        \resumeItem{CS and Robotics}
+        \resumeItemLine
           {Taught various courses in CS and robotics to SC middle and high school students.}
       \resumeItemListEnd
 
