@@ -1,0 +1,442 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+
+\usepackage{hanging}
+
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{ \vspace{-4pt}\scshape\raggedright\large }{}{0em}{}[\color{black} \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEduSubheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small #5} \\
+      %\textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumePublication}[5]{
+    \item\begin{minipage}[t]{0.85\linewidth}
+    \vspace{-2pt}\begin{hangparas}{2.7em}{1}
+    \textbf{#1} \quad #3, #2, #4, #5
+    \end{hangparas}\end{minipage}
+}
+
+\newcommand{\resumeOrganizationHeading}[2]{
+  \vspace{-2pt}\item
+    #1 (\textit{#2}) \\
+}
+
+\newcommand{\resumeConferenceHeading}[3]{
+  \vspace{-2pt}\item
+    #1, \textit{#2} \hfill \textit{#3} \\
+}
+
+\newcommand{\resumeGrantHeading}[3]{
+  \vspace{-2pt}\item
+    #1 #2 \hfill \textit{#3} \\
+}
+
+\newcommand{\resumeAwardHeading}[2]{
+  \vspace{-2pt}\item
+    #1 \hfill \textit{#2} \\
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+% \begin{center}
+%     \textbf{\Huge \scshape Joseph Telaak} \\ \vspace{3pt}
+%     \small
+%     \faMobile \hspace{.5pt} \href{tel:7043517396}{704 351 7396}
+%     $|$
+%     \faAt \hspace{.5pt} \href{mailto:jtelaak@sc.edu}{jtelaak@sc.edu}
+%     $|$
+%     \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/jtelaak}{LinkedIn}
+%     $|$
+%     \faGithub \hspace{.5pt} \href{https://github.com/The1TrueJoe}{GitHub}
+%     $|$
+%     \faGlobe \hspace{.5pt} \href{https:/telaak.dev}{Portfolio}
+%     $|$
+%     \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/}{Columbia, SC}
+% \end{center}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://linkedin.com/in/jtelaak/}{\Large Joseph Telaak}} & Email : \href{mailto:jtelaak@sc.edu}{jtelaak@sc.edu}\\
+  \href{https://linkedin.com/in/jtelaak/}{https://linkedin.com/in/jtelaak/} & Mobile : 704-351-7396 \\
+\end{tabular*}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEduSubheading
+      {University of South Carolina}{Columbia, SC}
+      {B.S.E in Computer Engineering;   \textbf{GPA: 4.00}} {Aug 2022 \textbf{--} Jun 2025 (Expected)}
+      {B.S in Mathematics}
+
+    \resumeSubheading
+      {South Carolina Governor's School for Science and Mathematics} {Hartsville, SC}
+      {High School Diploma;   \textbf{GPA: 3.8}} {Aug 2020 \textbf{--} May 2022}
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- RESEARCH EXPERIENCE -----------
+
+\section{Research Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {USC SyReX Lab}{Columbia, SC}
+      {Undergraduate Research Assistant}{Feb 2023 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Currently working with Dr. Sanjib Sur in the Computer Science and Engineering Department}
+            \resumeItem{Developing applications for millimeter-wave radar systems}
+            \resumeItem{Creating a dataset for radar-based pedestrian detection using radar, LiDAR, and camera sensors}
+            \resumeItem{Developed a demo to display radar-detected vital signs compared with a optical heart rate sensor}
+            \resumeItem{Improved the data-transfer rates, which were a known issue by the manufacturer, by 5x}
+        \resumeItemListEnd
+  
+    \resumeSubheading
+      {GSSM Autonomous Golf-Cart Project}{Hartsville, SC}
+      {Project Leader}{Jan 2022 \textbf{--} May 2022, Jan 2023 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Proposed and developed a new engineering-projects course with Dr. Elaine Parshall at GSSM}
+            \resumeItem{Handled project funding, and raised over \$50,000}
+            \resumeItem{Designed and built a PCB to control existing golf-cart hardware}
+            \resumeItem{Implemented a LiDAR and camera-based object detection system}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {USC Cyberinfrastructure Lab}{Columbia, SC}
+      {Undergraduate Research Assistant}{Jun 2021 \textbf{--} Jul 2021}
+        \resumeItemListStart
+            \resumeItem{Worked with Dr. Jorge Crichigno in the Integrated Information Technology Department}
+            \resumeItem{Developed applications for P4 Programmable Switches}
+            \resumeItem{Developed scripts to automate packet loss and throughput measurements}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {South Carolina Governor's School for Science and Mathematics} {Hartsville, SC}
+      {Interim Instructor}{Jan 2023}
+        \resumeItemListStart
+            \resumeItem{Guest instructor for Dr. Elaine Parshall's course during the January Interim term}
+            \resumeItem{Helped teach electronics engineering and embedded systems to current students}
+            \resumeItem{Focused on applications of microcontrollers and sensors related to the golf-cart}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%----------- VOLUNTEER EXPERIENCE -----------
+
+% \section{Volunteer Experience}
+% \vspace{3pt}
+% \resumeSubHeadingListStart
+  
+%   \resumeSubheading
+%     {FIRST South Carolina} {Columbia, SC}
+%     {Various Roles}{Jan 2023}
+%       \resumeItemListStart
+%           \resumeItem{FIRST SC Alumni Board Member}
+%           \resumeItem{Volunteered at various FIRST Robotics events in South Carolina}
+%           \resumeItem{FTC-Program First Technical Assisant (Key Role)}
+%           \resumeItem{FRC-Program Robot Inspector}
+%           \resumeItem{FLL-Program Judge}
+%       \resumeItemListEnd
+  
+% \resumeSubHeadingListEnd
+
+
+%----------- AWARDS -----------
+
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \resumeAwardHeading
+      {USC Dean's List}{Spring 2022}
+    \resumeAwardHeading
+      {USC President's List}{Fall 2022}
+    \resumeAwardHeading
+      {USC Fall 2022 Code-A-Thon Runner-Up}{Fall 2022}
+    \resumeAwardHeading
+      {FTC Design Award}{Spring 2021-2022}
+    \resumeAwardHeading
+      {AP Scholar With Distinction}{Spring 2020}
+    \resumeAwardHeading
+      {FRC Design Award}{Spring 2019}
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- PROJECTS -----------
+
+% \section{Projects}
+%     \vspace{3pt}
+%     \resumeSubHeadingListStart
+      
+%       \resumeProjectHeading
+%         {\textbf{Filters and Fractals} $|$ \emph{\href{https://github.com/arasgungore/filters-and-fractals}{\color{blue}GitHub}}}{}
+%           \resumeItemListStart
+%             \resumeItem{A C project which implements a variety of image processing operations that manipulate the size, filter, brightness, contrast, saturation, and other properties of PPM images from scratch.}
+%             \resumeItem{Added recursive fractal generation functions to model popular fractals including Mandelbrot set, Julia set, Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
+%           \resumeItemListEnd
+      
+%     \resumeSubHeadingListEnd
+
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Programming:}{ C, C++, Java, Python, MATLAB, R, MySQL, VHDL} \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{ ROS, Intel Quartus, P4, mmWave Studio} \\ \vspace{3pt}
+        
+        \textbf{Languages:}{ English (Native), German (Elementary), Mandarin Chinese (Elementary)}
+        
+        % \textbf{Frameworks}{: X, X, X} \\
+        % \textbf{Developer Tools}{: X, X, X} \\
+        % \textbf{Libraries}{: X, X, X} \\
+        % \textbf{Applications}{: X, X, X}
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- RELEVANT COURSEWORK -----------
+
+\section{Relevant Coursework}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Graduate-level coursework:}{ CSCE-750 Analysis of Algorithms, CSCE-611 Advanced Digital Design, CSCE-513 Computer Architecture, CSCE-567 Visualization Tools} \\ \vspace{3pt}
+        
+        \textbf{Other coursework:}{ CSCE-313 Embedded Systems, CSCE-274 Robotics, CSC-340 Artificial Intelligence, CSC-311 Compilers, CSC-270 Database Design}
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- CERTIFICATES -----------
+
+% \section{Certificates}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- ORGANIZATIONS -----------
+
+\section{Organizations}
+  \resumeSubHeadingListStart
+    
+    \resumeOrganizationHeading
+      {IEEE Eta Kappa Nu Honor Society}{IEEE HKN}
+    \resumeOrganizationHeading
+      {American Institute of Aeronautics and Astronautics}{AIAA}
+    \resumeOrganizationHeading
+      {Assoication for Computing Machinery}{ACM}
+    \resumeOrganizationHeading
+      {Institute of Electrical and Electronics Engineers}{IEEE}
+    \resumeOrganizationHeading
+      {Engineers Without Borders}{EWB}
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+  % \resumeSubHeadingListStart
+    % \small{\item{Swimming, Fitness, Eight-ball}}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+% \section{References}
+  % \resumeSubHeadingListStart
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+
+%----------- Grants -----------
+
+\section{Grants}
+  \resumeSubHeadingListStart
+    \resumeGrantHeading{USC REU}{\$3.9k}{Summer 2023}
+    \resumeGrantHeading{USC REU}{\$2.7k}{Spring 2023}
+    \resumeGrantHeading{USC REU}{\$2.7k}{Spring 2023}
+    \resumeGrantHeading{USC Dean's Scholarship}{\$3k}{Fall 2022}
+    \resumeGrantHeading{USC Palmetto Fellows}{\$10k}{Fall 2022 - Spring 2025}
+    
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+
+%----------- Conferences -----------
+
+
+\section{Conferences}
+   \resumeSubHeadingListStart
+      \resumeConferenceHeading{USC CSE Research Symposium}{Columbia, SC}{Apr 14, 2023}
+      \resumeConferenceHeading{AIAA Reigon 2 Student Conference}{Knoxville, TN}{Mar 26-28, 2023}
+      \resumeConferenceHeading{GSSM 34th Annual Research Colloquium}{Hartsville, SC}{Nov 17, 2022}
+      \resumeConferenceHeading{GSSM 33rd Annual Research Colloquium}{Hartsville, SC}{Oct 22, 2021}
+      \resumeConferenceHeading{SPRI 2021 Poster Session}{Columbia, SC}{July 16, 2021}
+      
+    \resumeSubHeadingListEnd
+
+%----------- Posters -----------
+
+
+\section{Posters}
+   \resumeSubHeadingListStart
+      \resumePublication{P1}{Designing an Arduino-based Rocket Flight Computer for Embedded Systems Education}{Joseph Telaak, Elie Kfoury, Jose Gomez, Ali AlSabeh, Shahrin Sharif, Jorge Crichigno}{SPRI 2021 Poster Session}{July 2021}
+      
+    \resumeSubHeadingListEnd
+  
+
+%----------- Publicactions -----------
+
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumePublication{C1}{Designing an Arduino-based Rocket Flight Computer for Embedded Systems Education}{Joseph Telaak, Wout De Backer}{AIAA Region 2 Student Conference}{Mar 2023}
+    
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+
+\end{document}
