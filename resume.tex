@@ -106,14 +106,14 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheadingEduTwo
-      {University of South Carolina}{Columbia, SC}
-      {BSE in Computer Engineering;}{Aug. 2022 -- May 2025 (Exp)}
-      {BS in Mathematics;}
+      {University of South Carolina (USC)}{Columbia, SC}
+      {BSE in Computer Engineering (Major GPA: \bf{3.95});}{Aug. 2022 -- May 2025 (Exp)}
+      {BS in Mathematics (Major GPA: \bf{4.0});}
     % \resumeSubheading
     %   {University of South Carolina}{Columbia, SC}
     %   {BSE in Computer Engineering, Minor in Math; GPA: 4.0}{Aug. 2022 -- May 2025 (Exp)}
     \resumeSubheadingEdu
-      {South Carolina Governor's School for Science and Mathematics}{Hartsville, SC}
+      {South Carolina Governor's School for Science and Mathematics (SCGSSM)}{Hartsville, SC}
       {High School Diploma, Concentration in CS and Math;}{Aug. 2020 - May 2022}
   \resumeSubHeadingListEnd
 
@@ -134,10 +134,14 @@
 
     \resumeSubheading
       {USC SyReX Lab}{Columbia, SC}
-      {Undergraduate Researcher}{Feb. 2023 - Present}
+      {Undergraduate Research Assistant}{Feb. 2023 - Present}
       \resumeItemListStart
         % \resumeItemLine
         %   {Research Assistant under Dr. Sanjib Sur.}
+        \resumeItemLine
+          {Building and training a model to predict ECG signal based on mmWave reflections.}
+        \resumeItemLine
+          {Designing a new data capture board to replace the current one by TI using an FPGA.}
         \resumeItemLine
           {Created a dataset to train a model to classify pedestrians and cars with mmWave radar.}
         \resumeItemLine
@@ -170,7 +174,7 @@
         \resumeItemLine
           {Designed custom circuit boards to retrofit drive-by-wire control system for multiple models of golf carts.}
         \resumeItemLine
-          {Wrote software to help the vehicle to avoid collisions, navigate autonomously, and offer teleoperated control.}
+          {Wrote software to help the vehicle to avoid collisions, navigate autonomously, and allow teleoperated control.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -191,28 +195,36 @@
 \section{Volunteering}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {SCGSSM Board of Directors}{Hartsville, SC}
+      {Alumni Association Board Member}{Jul. 2023 - Present}
+      % \resumeItemListStart
+      %   \resumeItemLine
+      %     {Alumni engagement, awards and events planning.}
+      %   %   \resumeItemLine
+      %   %     {Taught various courses in CS and robotics to SC middle and high school students.}
+    %\resumeItemListEnd
+    \resumeSubheading
       {FIRST Robotics}{Columbia, SC}
-      {Various Volunteer Roles}{Jan. 2022 - Present}
+      {Alumni Association Board Member, Various Volunteer Roles}{Jan. 2022 - Present}
       \resumeItemListStart
         \resumeItemLine
           {Leveraged several years of FIRST experience to mentor top-ranking teams in SC.}
         \resumeItemLine
           {Volunteered as Judge and Robot Inspector.}
-        \resumeItemLine
-          {Appointed to FIRST SC Alumni Association board.}
+        
         % \resumeItem{Judge}
         %   {Interviewed teams and helped decide the winners of the awards.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {SCGSSM SPARK!}{Hartsville, SC}
-      {SPARK! Leader and Instructor}{Aug. 2020 - May 2022}
-      \resumeItemListStart
-        \resumeItemLine
-          {Led and taught an 8-week Python course to SC middle and high school students.}
-        \resumeItemLine
-          {Taught various courses in CS and robotics to SC middle and high school students.}
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {SCGSSM SPARK!}{Hartsville, SC}
+    %   {SPARK! Leader and Instructor}{Aug. 2020 - May 2022}
+    %   \resumeItemListStart
+    %     % \resumeItemLine
+    %     %   {Led and taught an 8-week Python course to SC middle and high school students.}
+    %     \resumeItemLine
+    %       {Taught various courses in CS and robotics to SC middle and high school students.}
+    %   \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -220,12 +232,13 @@
 \section{Selected Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{Self-Driving Golf Cart}
-      {Retrofited a golf cart with an Advanced Driver Assistance System with custom electronics, LiDAR, and ZED stereo cameras.}
+      {Retrofited a golf cart with an Advanced Driver Assistance System with custom electronics, LiDAR, and ZED stereo cameras. Custom NVIDIA Jetson TX2 carrier board with analog to CSI video capture.}
 
     \resumeSubItem{Open-Source Rocket Flight Computer}
-      {"Hackable" rocket flight computer designed to enable users to learn flight control and embedded systems.}
-%     \resumeSubItem{Mac Setup}
-%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+      {Rocket flight computer with GPS, IMU, barometer, and LoRA telemetry.}
+
+    \resumeSubItem{RISC-V CPU with GPIO}
+      {Designed a RISC-CPU with parallelization hazard detection, memory-mapped GPIO/UART.}
   \resumeSubHeadingListEnd
 
 %
