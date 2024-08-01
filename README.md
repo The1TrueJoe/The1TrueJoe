@@ -1,6 +1,6 @@
 # Joseph Telaak 
 
-- 🏫 School
+<!-- - 🏫 School
   - Computer Engineering Student at UofSC
   - SC Governor's School for Science + Math Alum
 - 🚙 Currently working on a [self driving golf cart](https://autogolfc.art) with funding from Google
@@ -17,7 +17,7 @@
   - [ROV](https://github.com/The1TrueJoe/ROV)
   - [Simple Compiler](https://github.com/The1TrueJoe/SCGSSM-Assignments/tree/main/CSC111/SML)
 
-<br>
+<br> -->
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
