@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 
 
@@ -38,7 +38,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
@@ -51,34 +51,34 @@
 
 \newcommand{\resumeItemLine}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-3pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubheadingEdu}[4]{
-  \vspace{-1pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubheadingEduTwo}[5]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-      \textit{\small#5} \\
-    \end{tabular*}\vspace{-5pt}
-}
+% \newcommand{\resumeSubheadingEduTwo}[5]{
+%   \vspace{-1pt}\item
+%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{\small#3} & \textit{\small #4} \\
+%       \textit{\small#5} \\
+%     \end{tabular*}\vspace{-5pt}
+% }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
@@ -92,7 +92,6 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
@@ -101,34 +100,23 @@
   \href{https://linkedin.com/in/jtelaak/}{https://linkedin.com/in/jtelaak/} & Mobile : 704-351-7396 \\
 \end{tabular*}
 
-
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheadingEdu
       {University of South Carolina (USC)}{Columbia, SC}
-      {BSE in Computer Engineering, Leadership Distinction in Research (GPA: 3.58);}{Aug. 2022 -- Dec. 2024}
+      {BSE in Computer Engineering, Leadership Distinction in Research (Major GPA: 3.88)}{Aug. 2022 -- Dec. 2024}
       % {BS in Mathematics (Major GPA: 4.0);}
     
     \resumeSubheadingEdu
       {South Carolina Governor's School for Science and Mathematics (SCGSSM)}{Hartsville, SC}
-      {High School Diploma, Concentration in CS and Math;}{Aug. 2020 - May 2022}
+      {High School Diploma, Concentration in CS and Math}{Aug. 2020 - May 2022}
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-
-    % \resumeSubheading
-    %   {FIRST SC}{Columbia, SC}
-    %   {Founding Alumni Board Member}{Feb. 2023 - Present}
-    %   \resumeItemListStart
-    %     \resumeItemLine
-    %       {Helping start the alumni relations board for FIRST SC.}
-    %     \resumeItemLine
-    %       {Planning events to increase alumni engagement.}
-    % \resumeItemListEnd
 
     % \resumeSubheading
     %   {Telaak Automation}{Myrtle Beach, SC}
@@ -150,24 +138,19 @@
     %     {Updated HPC infrastructure by installing new compute and storage servers.}
     %     \resumeItemLine
     %     {Created a ollama chatbot trained on internal confluence documentation for training and support.}
-    %     % \resumeItemLine
-    %     % {Trained an LSTM model for accelerator simulation and modeling.}
     %   \resumeItemListEnd
       
     \resumeSubheading
-      {USC SyReX Lab}{Columbia, SC}
-      {Research Assistant}{Feb. 2023 - Present}
+      {USC Systems Research on X Lab}{Columbia, SC}
+      {Research Assistant}{Feb. 2023 - Dec. 2024}
       \resumeItemListStart
         % \resumeItemLine
         %   {Research Assistant under Dr. Sanjib Sur.}
-        \resumeItemLine{Created a system for contactless prediction of ECG readings and vitals using mmWave radar.}
-        \resumeItemLine{Developed and presented a live demonstration of contactless vital sign measurement.}
-        \resumeItemLine{Published work on generating camera-like 3D bounding boxes using only mmWave radar.} %\hyperlink{https://doi.org/10.1145/3643832.3661416}{MobiSys}}
-        % \resumeItemLine
-        %   {Developed a demonstration system to compare vitals measured by a radar to those measured by a smartwatch.}
-        \resumeItemLine{Designed a system to combine standalone mmWave radars into a larger array structure to increase resolution.}
-        \resumeItemLine{Constructed the ground truth data collection setups for several projects.}
-
+        \resumeItemLine{Designed a system for contactless prediction of ECG readings and vital signs using mmWave radar.}
+        \resumeItemLine{Developed and showcased a live demonstration for measuring vital signs without physical contact.}
+        \resumeItemLine{Published research on generating camera-like 3D bounding boxes exclusively using mmWave radar.}
+        \resumeItemLine{Engineered a system to integrate multiple standalone mmWave radars into an array structure for enhanced resolution.}
+        \resumeItemLine{Built ground truth data collection setups supporting multiple projects.}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -185,11 +168,9 @@
     %   \resumeItemListEnd
 
     \resumeSubheading
-      {SCGSSM Autonomous Golf Cart Research}{Hartsville, SC}
+      {SCGSSM Autonomous Golf Cart Project}{Hartsville, SC}
       {Founder, Part-Time Consultant/Instructor}{Jan. 2022 - Feb. 2023, Jan. 2024 - Present}
       % \resumeItemListStart
-      %   \resumeItemLine
-      %     {Managed funding (Over \$50k), part procurement, and technical design.}
       %   \resumeItemLine
       %     {Retrofitted a drive-by-wire and ADAS system while retaining normal manual operation.}
       %   \resumeItemLine
@@ -200,10 +181,13 @@
       %     {Consult on the ongoing project and planning a fleet managment system for students to implement.}
       % \resumeItemListEnd
       \resumeItemListStart
-        \resumeItemLine{Converted standard golf carts to ADAS-enabled vehicles that operate in a V2V networked system.}
-        \resumeItemLine{Turned project into an ongoing course and served as a guest instructor.}
-        \resumeItemLine{Managed funding (>\$50k) during the initial phase of the project and secured ongoing support. }
+        \resumeItemLine{Developed a vendor-independent approach for converting golf carts into ADAS-enabled vehicles.}
+        \resumeItemLine{Designed a custom Nvidia Jetson board for analog-to-digital video capture.}
+        \resumeItemLine{Implemented computer vision to enable obstacle avoidance, sign recognition, and lane following.}
+        \resumeItemLine{Established the project as an ongoing course and contributed as a guest instructor.}
+        \resumeItemLine{Secured funding exceeding \$50k with ongoing support from Google and the SC Dept. of Education.}
       \resumeItemListEnd
+
   
 
     \resumeSubheading
@@ -213,7 +197,7 @@
         % \resumeItemLine
         %   {Worked under Dr. Jorge Crichigno.}
         \resumeItemLine
-          {Automated throughput and packet loss measurements in both real and simulated networks.}
+          {Automated equipment configuration, throughput testing, and packet loss measurements in networks.}
         \resumeItemLine
           {Developed a on-switch server load balancer in P4.}
       \resumeItemListEnd
@@ -221,28 +205,25 @@
   \resumeSubHeadingListEnd
 
 %-----------VOLUNTEERING-----------------
-\section{Volunteering}
+\section{Leadership}
   \resumeSubHeadingListStart
     \resumeSubheading
       {SCGSSM Board of Directors}{Hartsville, SC}
-      {Alumni Association Board Member, Engagement Committee}{Jul. 2023 - Present}
+      {Alumni Association Engagement Committee}{Jul. 2023 - Present}
       % \resumeItemListStart
       %   \resumeItemLine
       %     {Alumni engagement, awards and events planning.}
-      %   %   \resumeItemLine
-      %   %     {Taught various courses in CS and robotics to SC middle and high school students.}
-    %\resumeItemListEnd
+      % \resumeItemListEnd
     \resumeSubheading
       {FIRST Robotics}{Columbia, SC}
-      {FIRST Technical Advisor}{Jan. 2022 - Present}
+      {FIRST Technical Advisor, Judge, Robot Inspector}{Jan. 2022 - Present}
       % \resumeItemListStart
-        % \resumeItemLine
-        %   {Leveraged several years of FIRST experience to mentor top-ranking teams in SC.}
-        % \resumeItemLine
-        %   {Volunteered as Judge and Robot Inspector.}
-        
-        % \resumeItem{Judge}
-        %   {Interviewed teams and helped decide the winners of the awards.}
+      %   \resumeItemLine
+      %    {Leveraged several years of FIRST experience to mentor top-ranking teams in SC.}
+      %   \resumeItemLine
+      %    {Volunteered as Judge and Robot Inspector.}
+      %   \resumeItem{Judge}
+      %     {Interviewed teams and helped decide the winners of the awards.}
       % \resumeItemListEnd
 
     % \resumeSubheading
@@ -260,9 +241,9 @@
 %-----------PROJECTS-----------------
 \section{Selected Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Self-Driving Golf Cart}
-    %   {Retrofited a golf cart with an ADAS system. Designed custom Nvidia Jetson carrier board with analog to CSI video capture. Used computer vision to avoid obstacles, recognize street signs, and follow road lines. }
-      {Designed vendor-independent ADAS system for golf carts. Custom Nvidia Jetson board with analog to digital video capture. Computer vision for obstacle avoidance, sign recognition, and lane following. }
+    % \resumeSubItem{Self-Driving Golf Cart}
+    % %   {Retrofited a golf cart with an ADAS system. Designed custom Nvidia Jetson carrier board with analog to CSI video capture. Used computer vision to avoid obstacles, recognize street signs, and follow road lines. }
+    %   {Designed vendor-independent ADAS system for golf carts. Custom Nvidia Jetson board with analog to digital video capture. Computer vision for obstacle avoidance, sign recognition, and lane following. }
 
     \resumeSubItem{RISC-V CPU}
       {Designed a custom multicore RISC-V CPU with a matrix coprocessor and dedicated peripherials for PWM, SPI, and I2C. Implemented on Altera FPGA.}
@@ -279,12 +260,12 @@
 
 %
 %--------PROGRAMMING SKILLS------------
-\section{Other}
+\section{Skills}
  \resumeSubHeadingListStart
    \resumeSubItem{Languages}{: C/C++, Python, Java, MATLAB, Rust, LUA, P4, Verilog, SQL, MIPS, x86 Assembly}
    \resumeSubItem{Programs}{: mmWave Studio, Quartus, STM32 Cube, Altium, AutoCAD}
    \resumeSubItem{Technologies}{: ROS, RTOS, Kubernetes, RF Design, Signal Processing, 3D Printing}
-   \resumeSubItem{Memberships}{: IEEE Eta Kappa Nu, IEEE MTTS, IEEE, ACM, AIAA}
+   \resumeSubItem{Memberships}{: IEEE Eta Kappa Nu (HKN), IEEE MTTS, IEEE, ACM, AIAA}
  \resumeSubHeadingListEnd
 
 
