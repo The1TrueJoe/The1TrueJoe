@@ -51,7 +51,10 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
-\titleformat{\section}{ \vspace{-4pt}\scshape\raggedright\large }{}{0em}{}[\color{black} \vspace{-5pt}]
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -82,12 +85,12 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeEduSubheading}[6]{
+\newcommand{\resumeEduSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-      \textit{\small #5} \\
+      %\textit{\small #5} \\
       %\textit{\small #6} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -174,52 +177,54 @@
     
     \resumeEduSubheading
       {University of South Carolina}{Columbia, SC}
-      {B.S.E in Computer Engineering;   \textbf{GPA: 4.0}} {Aug 2022 \textbf{--} Jun 2025 (Expected)}
-      {B.S in Mathematics}
+      {B.S.E in Computer Engineering;   \textbf{GPA: 3.61, Major GPA: 3.88}} {Aug 2022 \textbf{--} Dec 2024}
 
-    \resumeSubheading
-      {South Carolina Governor's School for Science and Mathematics} {Hartsville, SC}
-      {High School Diploma;   \textbf{GPA: 3.8}} {Aug 2020 \textbf{--} May 2022}
+    % \resumeSubheading
+    %   {South Carolina Governor's School for Science and Mathematics} {Hartsville, SC}
+    %   {High School Diploma;   \textbf{GPA: 3.8}} {Aug 2020 \textbf{--} May 2022}
     
   \resumeSubHeadingListEnd
 
 
 
 %----------- RESEARCH EXPERIENCE -----------
-
 \section{Research Experience}
   \vspace{3pt}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {USC SyReX Lab}{Columbia, SC}
-      {Undergraduate Research Assistant}{Feb 2023 \textbf{--} Present}
-        \resumeItemListStart
-            \resumeItem{Currently working with Dr. Sanjib Sur in the Computer Science and Engineering Department}
-            \resumeItem{Developing applications for millimeter-wave radar systems}
-            \resumeItem{Creating a dataset for radar-based pedestrian detection using radar, LiDAR, and camera sensors}
-            \resumeItem{Developed a demo to display radar-detected vital signs compared with a optical heart rate sensor}
-            \resumeItem{Improved the data-transfer rates, which were a known issue by the manufacturer, by 5x}
-        \resumeItemListEnd
-  
+      {Undergraduate Research Assistant}{Feb 2023 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{Collaborated with Dr. Sanjib Sur on millimeter-wave radar systems research}
+        \resumeItem{Co-authored research on generating camera-like 3D bounding boxes using only mmWave radar}
+        \resumeItem{Collected and synchronized training data for vehicle detection using radar, LiDAR, and camera sensors}
+        \resumeItem{Developed a demo comparing radar-based vital sign detection with optical heart rate sensors}
+        \resumeItem{Contributed to the design of a system for contactless prediction of ECG readings and vital signs using mmWave radar.}
+        \resumeItem{Optimized software for efficient radar data transfer to computers}
+        \resumeItem{Designed and built data collection setups for multiple research projects}
+      \resumeItemListEnd
+
     \resumeSubheading
-      {GSSM Autonomous Golf-Cart Project}{Hartsville, SC}
-      {Research Assistant}{Jan 2022 \textbf{--} May 2022, Jan 2023 \textbf{--} Present}
-        \resumeItemListStart
-            \resumeItem{Proposed and developed a new engineering-projects course with Dr. Elaine Parshall at GSSM}
-            \resumeItem{Handled project funding, and raised over \$50,000}
-            \resumeItem{Designed and built a PCB to control existing golf-cart hardware}
-            \resumeItem{Implemented a LiDAR and camera-based object detection system}
-        \resumeItemListEnd
-    
+      {SCGSSM Autonomous Golf Cart}{Hartsville, SC}
+      {Student Researcher, Consultant/Instructor}{Jan 2022 -- May 2022, Jan 2023 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{Piloted a new engineering projects course with Dr. Elaine Parshall, successfully adding it to the course catalog}
+        \resumeItem{Developed a vendor-neutral retrofit for golf carts enabling drive-by-wire and ADAS while retaining manual controls}
+        \resumeItem{Designed a custom Nvidia Jetson carrier board and PCB for hardware control and video capture}
+        \resumeItem{Implemented LiDAR and camera-based object detection, obstacle avoidance, sign recognition, and lane following}
+        \resumeItem{Secured over \$50,000 in project funding with ongoing support from Google and the SC Dept. of Education}
+        \resumeItem{Consulted on ongoing project development and planning for a student-implemented fleet management system}
+      \resumeItemListEnd
+
     \resumeSubheading
       {USC Cyberinfrastructure Lab}{Columbia, SC}
-      {Undergraduate Research Assistant}{Jun 2021 \textbf{--} Jul 2021}
-        \resumeItemListStart
-            \resumeItem{Worked with Dr. Jorge Crichigno in the Integrated Information Technology Department}
-            \resumeItem{Developed applications for P4 Programmable Switches}
-            \resumeItem{Developed scripts to automate packet loss and throughput measurements}
-        \resumeItemListEnd
+      {Summer Research Intern}{Jun 2021 -- Jul 2021}
+      \resumeItemListStart
+        \resumeItem{Worked with Dr. Jorge Crichigno as a high school summer intern}
+        \resumeItem{Developed P4 applications, including an on-switch webserver load balancer, and automated network testing scripts}
+        \resumeItem{Presented at the 2021 SPRI Poster Session and at the GSSM 33rd Annual Research Colloquium}
+      \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 
@@ -227,97 +232,33 @@
 
 %----------- WORK EXPERIENCE -----------
 
-\section{Work Experience}
+\section{Professional Experience}
   \vspace{3pt}
   \resumeSubHeadingListStart
-    
+
     \resumeSubheading
-      {South Carolina Governor's School for Science and Mathematics} {Hartsville, SC}
-      {Interim Instructor}{Jan 2023}
-        \resumeItemListStart
-            \resumeItem{Guest instructor for Dr. Elaine Parshall's course during the January Interim term}
-            \resumeItem{Helped teach electronics engineering and embedded systems to current students}
-            \resumeItem{Focused on applications of microcontrollers and sensors related to the golf-cart}
-        \resumeItemListEnd
+      {Parkeze}{Columbia, SC}
+      {Product Manager - Sensing Solutions}{Dec. 2024 -- Present}
+      \resumeItemListStart
+          \resumeItem{Collaborating with USC to pilot a smart parking initiative, overseeing test planning and deployment.}
+          \resumeItem{Designed and developed ultra low-power parking sensors and custom network gateways for scalable deployment.}
+          \resumeItem{Developed robust vehicle detection using magnetometer sensors and signal processing.}
+          \resumeItem{Streamlined the LoRaWAN stack to transmit sensor state directly, eliminating LNS dependencies and reducing overhead.}
+          \resumeItem{Engineered Redis-based caching and pub/sub systems for low-latency delivery of sensor state and metadata.}
+          \resumeItem{Implemented geospatial queries and automated data warehousing for real-time parking search and efficient retention.}
+          \resumeItem{Architected a high-performance backend, significantly reducing network overhead and system latency.}
+      \resumeItemListEnd
     
   \resumeSubHeadingListEnd
-
-%----------- VOLUNTEER EXPERIENCE -----------
-
-% \section{Volunteer Experience}
-% \vspace{3pt}
-% \resumeSubHeadingListStart
-  
-%   \resumeSubheading
-%     {FIRST South Carolina} {Columbia, SC}
-%     {Various Roles}{Jan 2023}
-%       \resumeItemListStart
-%           \resumeItem{FIRST SC Alumni Board Member}
-%           \resumeItem{Volunteered at various FIRST Robotics events in South Carolina}
-%           \resumeItem{FTC-Program First Technical Assisant (Key Role)}
-%           \resumeItem{FRC-Program Robot Inspector}
-%           \resumeItem{FLL-Program Judge}
-%       \resumeItemListEnd
-  
-% \resumeSubHeadingListEnd
-
-
-%----------- AWARDS -----------
-
-\section{Awards \& Achievements}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \resumeAwardHeading
-      {USC Dean's List}{Fall 2022 - Fall 2023}
-    \resumeAwardHeading
-      {USC President's List}{Fall 2022}
-    \resumeAwardHeading
-      {USC Fall 2022 Code-A-Thon Runner-Up}{Fall 2022}
-    \resumeAwardHeading
-      {FTC Design Award}{Spring 2021-22}
-    \resumeAwardHeading
-      {AP Scholar With Distinction}{Spring 2020}
-    \resumeAwardHeading
-      {FRC Design Award}{Spring 2019}
-    
-  \resumeSubHeadingListEnd
-
-
-
-%----------- PROJECTS -----------
-
-% \section{Projects}
-%     \vspace{3pt}
-%     \resumeSubHeadingListStart
-      
-%       \resumeProjectHeading
-%         {\textbf{Filters and Fractals} $|$ \emph{\href{https://github.com/arasgungore/filters-and-fractals}{\color{blue}GitHub}}}{}
-%           \resumeItemListStart
-%             \resumeItem{A C project which implements a variety of image processing operations that manipulate the size, filter, brightness, contrast, saturation, and other properties of PPM images from scratch.}
-%             \resumeItem{Added recursive fractal generation functions to model popular fractals including Mandelbrot set, Julia set, Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
-%           \resumeItemListEnd
-      
-%     \resumeSubHeadingListEnd
-
-
 
 %----------- SKILLS -----------
 
 \section{Skills}
   \vspace{2pt}
   \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Programming:}{ C, C++, Java, Python, MATLAB, R, MySQL, VHDL} \\ \vspace{3pt}
-        
-        \textbf{Technologies:}{ ROS, Intel Quartus, P4, mmWave Studio} \\ \vspace{3pt}
-        
-        \textbf{Languages:}{ English (Native), German (Elementary), Mandarin Chinese (Elementary)}
-        
-        % \textbf{Frameworks}{: X, X, X} \\
-        % \textbf{Developer Tools}{: X, X, X} \\
-        % \textbf{Libraries}{: X, X, X} \\
-        % \textbf{Applications}{: X, X, X}
-    }}
+    \resumeSubItem{\textbf{Programming:}}{ C, C++, Java, Python, MATLAB, R, MySQL, VHDL}
+    \resumeSubItem{\textbf{Technologies:}}{ ROS, RTOS, LoRaWAN, mmWave Studio, Intel Quartus, STM32 Cube}
+    \resumeSubItem{\textbf{Developer Tools:}}{ Docker, Kubernetes, Redis, Kafka, Altium, KiCad}
   \resumeSubHeadingListEnd
 
 
@@ -328,26 +269,19 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Graduate-level coursework:}{ CSCE-750 Analysis of Algorithms, CSCE-611 Advanced Digital Design, CSCE-513 Computer Architecture} \\ \vspace{3pt}
-        
-        \textbf{Other coursework:}{ CSCE-313 Embedded Systems, CSCE-274 Robotics, CSC-340 Artificial Intelligence, CSC-311 Compilers, CSC-270 Database Design}
+        \textbf{Graduate-level:} \\
+        CSCE 790 (Wireless and Mobile Systems for IoT) \\
+        CSCE 750 (Analysis of Algorithms) \\
+        CSCE 611 (Advanced Digital Design) \\
+        CSCE 513 (Computer Architecture) \\
+        MATH 544 (Linear Algebra) \\
+        MATH 574 (Discrete Mathematics) \\[4pt]
+        \textbf{Undergraduate:} \\
+        CSCE 313 (Embedded Systems) \\
+        CSCE 311 (Operating Systems) \\
+        CSCE 274 (Robotics) \\
     }}
   \resumeSubHeadingListEnd
-
-
-
-%----------- CERTIFICATES -----------
-
-% \section{Certificates}
-  % \resumeSubHeadingListStart
-    
-    % \resumeOrganizationHeading
-      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
-    
-  % \resumeSubHeadingListEnd
-
-
-
 %----------- ORGANIZATIONS -----------
 
 \section{Organizations}
@@ -361,49 +295,41 @@
       {American Institute of Aeronautics and Astronautics}{AIAA}
     \resumeOrganizationHeading
       {Assoication for Computing Machinery}{ACM}
-    \resumeOrganizationHeading
-      {Engineers Without Borders}{EWB}
+    % \resumeOrganizationHeading
+    %   {Engineers Without Borders}{EWB}
     
   \resumeSubHeadingListEnd
 
+%----------- AWARDS -----------
 
-
-%----------- HOBBIES -----------
-
-% \section{Hobbies}
-  % \resumeSubHeadingListStart
-    % \small{\item{Swimming, Fitness, Eight-ball}}
-  % \resumeSubHeadingListEnd
-
-
-
-%----------- REFERENCES -----------
-
-% \section{References}
-  % \resumeSubHeadingListStart
+\section{Awards}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \resumeAwardHeading
+      {USC Dean's List x4}{Fall 2022 - Fall 2023}
+    \resumeAwardHeading
+      {USC President's List x1}{Fall 2022}
+    % \resumeAwardHeading
+    %   {USC Fall 2022 Code-A-Thon Runner-Up}{Fall 2022}
+    % \resumeAwardHeading
+    %   {FTC Design Award}{Spring 2021-22}
+    % \resumeAwardHeading
+    %   {AP Scholar With Distinction}{Spring 2020}
+    % \resumeAwardHeading
+    %   {FRC Design Award}{Spring 2019}
     
-  % \resumeSubHeadingListEnd
-
-
-
-%-------------------------------------------
+  \resumeSubHeadingListEnd
 
 %----------- Grants -----------
 
 \section{Grants and Scholarships}
   \resumeSubHeadingListStart
-    \resumeGrantHeading{USC REU}{\$4.0k}{Fall 2023}
-    \resumeGrantHeading{USC REU}{\$3.9k}{Summer 2023}
-    \resumeGrantHeading{USC REU}{\$2.7k}{Spring 2023}
-    \resumeGrantHeading{USC Dean's Scholarship}{\$3k}{Fall 2022}
-    \resumeGrantHeading{USC Palmetto Fellows}{\$10k}{Fall 2022 - Spring 2025}
-    \resumeGrantHeading{Google AI Grant}{\$10k}{Spring 2022}
+    \resumeGrantHeading{USC REU x5}{}{Spring 2023 -- Spring 2024}
+    \resumeGrantHeading{USC Dean's Scholarship}{}{Fall 2022}
+    \resumeGrantHeading{USC Palmetto Fellows}{}{Fall 2022 -- Spring 2024}
+    \resumeGrantHeading{Google AI Grant}{}{Spring 2022}
     
   \resumeSubHeadingListEnd
-
-
-
-%-------------------------------------------
 
 %----------- Conferences -----------
 
@@ -420,26 +346,23 @@
       
     \resumeSubHeadingListEnd
 
-%----------- Posters -----------
-
-
-\section{Posters}
-   \resumeSubHeadingListStart
-      \resumePublication{P1}{Developing Applications for Programmable Protocol-Independent Packet Processors (P4) to Increase Network and Data Center Efficiency}{Joseph Telaak, Elie Kfoury, Jose Gomez, Ali AlSabeh, Shahrin Sharif, Jorge Crichigno}{SPRI 2021 Poster Session}{July 2021}
-      
-    \resumeSubHeadingListEnd
-  
-
 %----------- Publicactions -----------
 
-\section{Publications}
+\section{Conference Publications}
   \resumeSubHeadingListStart
+    \resumePublication{C2}{AutoSense: Reliable 3D Bounding Box Prediction for Vehicles}{Hem Regmi, Reza Tavasoli, Joseph Telaak, Sanjib Sur, Srihari Nelakuditi}{ACM MobiSys 2024 Poster}{June 2024}
     \resumePublication{C1}{Designing an Arduino-based Rocket Flight Computer for Embedded Systems Education}{Joseph Telaak, Wout De Backer}{AIAA Region 2 Student Conference}{Mar 2023}
     
   \resumeSubHeadingListEnd
 
+%----------- Posters -----------
 
+\section{Posters}
 
-%-------------------------------------------
+   \resumeSubHeadingListStart
+      \resumePublication{P1}{Developing Applications for Programmable Protocol-Independent Packet Processors (P4) to Increase Network and Data Center Efficiency}{Joseph Telaak, Elie Kfoury, Jose Gomez, Ali AlSabeh, Shahrin Sharif, Jorge Crichigno}{SPRI 2021 Poster Session}{July 2021}
+      
+    \resumeSubHeadingListEnd
+
 
 \end{document}
