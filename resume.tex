@@ -3,6 +3,13 @@
 
 
 \usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    citecolor=black
+}
 \usepackage[empty]{fullpage}
 \usepackage{fancyhdr}
 \usepackage{latexsym}
@@ -17,6 +24,7 @@
 \usepackage[sfdefault]{noto-sans}
 \usepackage[default]{sourcesanspro}
 
+\setlength{\footskip}{4.4pt}
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -38,8 +46,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-12pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
 
 %-------------------------
 % Custom commands
@@ -56,22 +64,28 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
+  \vspace{-4pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & #2 \vspace{-2pt} \\[1pt]
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeSubheadingEdu}[4]{
-  \vspace{-3pt}\item
+  \vspace{-4pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & #2 \\[1pt]
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
-
+\newcommand{\resumeSubheadingLeadership}[4]{
+  \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \vspace{-2pt} \\[1pt]
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-6pt}}
 
@@ -80,7 +94,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt,parsep=0pt,partopsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{3pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,7 +103,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://linkedin.com/in/jtelaak/}{\Large Joseph Telaak}} & Email : \href{mailto:jtelaak@sc.edu}{jtelaak@sc.edu}\\
+  \textbf{\Large Joseph Telaak} & Email : \href{mailto:jtelaak@sc.edu}{jtelaak@sc.edu}\\
   \href{https://linkedin.com/in/jtelaak/}{https://linkedin.com/in/jtelaak/} & Mobile : 704-351-7396 \\
 \end{tabular*}
 
@@ -155,10 +169,10 @@
 %-----------VOLUNTEERING-----------------
 \section{Leadership}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingLeadership
       {SCGSSM Board of Directors}{Hartsville, SC}
       {Alumni Association Engagement Committee Member}{Jul. 2023 - Present}
-    \resumeSubheading
+    \resumeSubheadingLeadership
       {FIRST Robotics}{Columbia, SC}
       {FIRST Technical Advisor, Judge, Robot Inspector}{Jan. 2022 - Present}
 
@@ -166,6 +180,7 @@
 
 %-----------PROJECTS-----------------
 \section{Selected Projects}
+\vspace{-3pt}
   \resumeSubHeadingListStart
 
     \resumeSubItem{PiSwitch}
@@ -190,6 +205,7 @@
 
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
+\vspace{-3pt}
  \resumeSubHeadingListStart
    \resumeSubItem{Software}{C/C++, Python, Java, MATLAB, Rust, LUA}
    \resumeSubItem{Tooling}{Altium, KiCad, Quartus, STM32 Cube, MXUExpresso, mmWave Studio}
