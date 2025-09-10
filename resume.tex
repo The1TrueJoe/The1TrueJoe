@@ -24,8 +24,8 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
-\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
@@ -38,8 +38,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
 
 %-------------------------
 % Custom commands
@@ -60,7 +60,7 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubheadingEdu}[4]{
@@ -71,23 +71,16 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-% \newcommand{\resumeSubheadingEduTwo}[5]{
-%   \vspace{-1pt}\item
-%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-%       \textbf{#1} & #2 \\
-%       \textit{\small#3} & \textit{\small #4} \\
-%       \textit{\small#5} \\
-%     \end{tabular*}\vspace{-5pt}
-% }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-6pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt,parsep=0pt,partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{3pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,13 +97,12 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheadingEdu
-      {University of South Carolina (USC)}{Columbia, SC}
-      {BSE in Computer Engineering, Leadership Distinction in Research (Major GPA: 3.88)}{Aug. 2022 -- Dec. 2024}
-      % {BS in Mathematics (Major GPA: 4.0);}
+      {University of South Carolina}{Columbia, SC}
+      {BSE in Computer Engineering, Leadership Distinction in Research (GPA: 3.61)}{Aug. 2022 -- Dec. 2024}
     
-    \resumeSubheadingEdu
-      {South Carolina Governor's School for Science and Mathematics (SCGSSM)}{Hartsville, SC}
-      {High School Diploma, Concentration in CS and Math}{Aug. 2020 - May 2022}
+    % \resumeSubheadingEdu
+    %   {South Carolina Governor's School for Science and Mathematics (SCGSSM)}{Hartsville, SC}
+    %   {High School Diploma, Concentration in CS and Math}{Aug. 2020 - May 2022}
   \resumeSubHeadingListEnd
 
 
@@ -118,96 +110,44 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-    % \resumeSubheading
-    %   {Telaak Automation}{Myrtle Beach, SC}
-    %   {Founder}{May 2024 - Present}
-    %   \resumeItemListStart
-    %     \resumeItemLine
-    %     {Installed Control4 custom integration and home automation systems.}
-    %     \resumeItemLine
-    %     {Indentified industry gaps a developed advanced IO controllers for environmental control and security.}
-    %     \resumeItemLine
-    %     {Developed drivers for integration with existing systems and custom hardware.}
-    %   \resumeItemListEnd
-    
-    % \resumeSubheading
-    %   {Stanford Linear Accelerator Center (SLAC)}{Menlo Park, CA}
-    %   {Intern}{Summer 2024}
-    %   \resumeItemListStart
-    %     \resumeItemLine
-    %     {Updated HPC infrastructure by installing new compute and storage servers.}
-    %     \resumeItemLine
-    %     {Created a ollama chatbot trained on internal confluence documentation for training and support.}
-    %   \resumeItemListEnd
-
     \resumeSubheading
       {Parkeze}{Columbia, SC}
-      {Product Manager - Sensing Solutions}{Dec. 2024 - Present}
+      {Product Manager, Sensing Solutions}{Dec. 2024 - Present}
       \resumeItemListStart
-        \resumeItemLine{Directed development of ultra low-power parking occupancy sensors and authored technical documentation.}
-        \resumeItemLine{Created custom PCBs for sensors and a LoRa-to-cellular gateway for network integration.}
-        \resumeItemLine{Optimized sensor firmware for minimal power consumption and extended battery life.}
-        \resumeItemLine{Designed geospatial database queries to enable real-time parking search.}
+        \resumeItemLine{Led end-to-end development of ultra-low-power IoT parking sensors, from concept to market launch.}
+        \resumeItemLine{Architected cloud-native backend infrastructure supporting real-time data streaming to 1000+ users.}
+        \resumeItemLine{Optimized sensor hardware and firmware achieving 50\% power reduction and 120\% cost savings.}
+        \resumeItemLine{Built comprehensive analytics platform using React and Flask for real-time sensor performance monitoring.}
+        \resumeItemLine{Developed custom Debian distribution for LoRaWAN gateways to reduce deployment time.}
       \resumeItemListEnd
       
     \resumeSubheading
       {USC Systems Research on X Lab}{Columbia, SC}
       {Research Assistant}{Feb. 2023 - Dec. 2024}
       \resumeItemListStart
-        % \resumeItemLine
-        %   {Research Assistant under Dr. Sanjib Sur.}
-        %\resumeItemLine{Designed a system for contactless prediction of ECG readings and vital signs using mmWave radar.}
-        \resumeItemLine{Co-authored research on generating camera-like 3D bounding boxes exclusively using mmWave radar.}
-        \resumeItemLine{Developed and showcased a live demonstration for measuring vital signs without physical contact.}
-        \resumeItemLine{Engineered a system to integrate multiple standalone mmWave radars into an array structure.}
-        \resumeItemLine{Built ground truth data collection setups supporting multiple projects.}
+        \resumeItemLine{Co-authored research on novel mmWave radar algorithms for 3D vehicle and pedestrian detection.}
+        \resumeItemLine{Secured research funding through competitive grant proposals.}
+        \resumeItemLine{Developed contactless vital sign monitoring system.}
+        \resumeItemLine{Designed data collection infrastructure supporting multiple research projects.}
       \resumeItemListEnd
-
-    % \resumeSubheading
-    %   {SCGSSM}{Hartsville, SC}
-    %   {Instructor}{Winter 2023}
-    %   \resumeItemListStart
-    %     % \resumeItem{Engineering Interim}
-    %     %   {I helped students design and build various projects across a variety of disciplines.}
-    %     \resumeItemLine%{Engineering Projects Course}
-    %       {Guest instructor under Dr. Elaine Parshall for the January Interim.}
-    %     \resumeItemLine%{Engineering Projects Course}
-    %       {Taught embedded systems and electronics engineering concepts.}
-    %     \resumeItemLine%{Engineering Projects Course}
-    %       {Developed course for permanent offering in the regular course-catalog.}
-    %   \resumeItemListEnd
 
     \resumeSubheading
       {SCGSSM Autonomous Golf Cart}{Hartsville, SC}
-      {Founder, Part-Time Consultant/Instructor}{Jan. 2022 - Feb. 2023, Jan. 2024 - May 2024}
-      % \resumeItemListStart
-      %   \resumeItemLine
-      %     {Retrofitted a drive-by-wire and ADAS system while retaining normal manual operation.}
-      %   \resumeItemLine
-      %     {Designed custom Nvidia Jetson carrier board with analog to CSI video capture.}
-      %   \resumeItemLine
-      %     {Used computer vision to avoid obstacles, recognize street signs, and follow road lines.}
-      %   \resumeItemLine
-      %     {Consult on the ongoing project and planning a fleet managment system for students to implement.}
-      % \resumeItemListEnd
+      {Project Lead and Founder of Ongoing Program}{Jan. 2022 - Feb. 2023, Jan. 2024 - May 2024}
       \resumeItemListStart
-        \resumeItemLine{Devised a vendor-independent method to convert golf carts into ADAS-enabled vehicles.}
-        \resumeItemLine{Designed a custom Nvidia Jetson board with analog-to-digital video capture.}
-        \resumeItemLine{Implemented computer vision to enable obstacle avoidance, sign recognition, and lane following.}
-        %\resumeItemLine{Established the project as an ongoing course and contributed as a guest instructor.}
-        %\resumeItemLine{Secured funding exceeding \$50k with ongoing support from Google and the SC Dept. of Education.}
+        \resumeItemLine{Transformed a legacy golf cart into an autonomous vehicle platform for research.}
+        \resumeItemLine{Engineered networked interface module enabling software control of legacy analog vehicle systems.}
+        \resumeItemLine{Designed custom Nvidia Jetson carrier board with multi-channel analog-to-digital video capture capabilities.}
+        \resumeItemLine{Implemented computer vision pipeline for obstacle detection, traffic sign recognition, and lane tracking.}
+        \resumeItemLine{Mentored 20+ students and established ongoing curriculum for autonomous systems development.}
       \resumeItemListEnd
-
-  
 
     \resumeSubheading
       {USC Cyberinfrastructure Lab}{Columbia, SC}
       {Research Assistant}{Summer 2021}
       \resumeItemListStart
-        \resumeItemLine
-          {Automated equipment configuration, throughput testing, and packet loss measurements in networks.}
-        \resumeItemLine
-          {Created an on-switch webserver load balancer in P4.}
+        \resumeItemLine{Automated equipment configuration, throughput testing, and packet loss measurements in networks.}
+        \resumeItemLine{Created an on-switch webserver load balancer in P4.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -218,62 +158,43 @@
     \resumeSubheading
       {SCGSSM Board of Directors}{Hartsville, SC}
       {Alumni Association Engagement Committee Member}{Jul. 2023 - Present}
-      % \resumeItemListStart
-      %   \resumeItemLine
-      %     {Alumni engagement, awards and events planning.}
-      % \resumeItemListEnd
     \resumeSubheading
       {FIRST Robotics}{Columbia, SC}
       {FIRST Technical Advisor, Judge, Robot Inspector}{Jan. 2022 - Present}
-      % \resumeItemListStart
-      %   \resumeItemLine
-      %    {Leveraged several years of FIRST experience to mentor top-ranking teams in SC.}
-      %   \resumeItemLine
-      %    {Volunteered as Judge and Robot Inspector.}
-      %   \resumeItem{Judge}
-      %     {Interviewed teams and helped decide the winners of the awards.}
-      % \resumeItemListEnd
-
-    % \resumeSubheading
-    %   {SCGSSM SPARK!}{Hartsville, SC}
-    %   {SPARK! Leader and Instructor}{Aug. 2020 - May 2022}
-    %   \resumeItemListStart
-    %     % \resumeItemLine
-    %     %   {Led and taught an 8-week Python course to SC middle and high school students.}
-    %     \resumeItemLine
-    %       {Taught various courses in CS and robotics to SC middle and high school students.}
-    %   \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Selected Projects}
   \resumeSubHeadingListStart
-    % \resumeSubItem{Self-Driving Golf Cart}
-    % %   {Retrofited a golf cart with an ADAS system. Designed custom Nvidia Jetson carrier board with analog to CSI video capture. Used computer vision to avoid obstacles, recognize street signs, and follow road lines. }
-    %   {Designed vendor-independent ADAS system for golf carts. Custom Nvidia Jetson board with analog to digital video capture. Computer vision for obstacle avoidance, sign recognition, and lane following. }
 
-    \resumeSubItem{RISC-V CPU}
-      {Implemented a multicore RISC-V CPU with custom matrix instructions and dedicated peripherials for PWM, SPI, and I2C on an FPGA.}
+    \resumeSubItem{PiSwitch}
+      {Created a 7-port router/network switch with custom controller, web UI, and OOB management.}
 
-    \resumeSubItem{Rocket Flight Computer}
-      {Arduino flight computer with GPS, IMU, barometer, and LoRA telemetry on custom PCB.}
+    \resumeSubItem{LLM Voice Assistant}
+      {Designed a far-field mic array with XVF DSP, Zephyr on i.MXRT, ESP32 Wi-Fi NIC, OTA for all 3 major chips, and real-time audio streaming to a LLM pipeline.}
+
+    \resumeSubItem{Agentic Audio Streamer}
+      {Developed a multi-room audio streaming system using an ADAU DSP, DACs, and Raspberry Pi CM5. Integrated Spotify Connect and enabled external control via a custom API for LLMs.}
+
+    \resumeSubItem{RISC CPU}
+      {Implemented a parallelized RISC CPU with GPIO on an FPGA.}
+
+    % \resumeSubItem{Rocket Flight Computer}
+    %   {Arduino flight computer with GPS, IMU, barometer, and LoRa telemetry on custom PCB.}
 
     \resumeSubItem{Pick-n-Place Machine}
-      {Designed an automated PCB assembler with a custom Marlin board and OpenPNP.}
+      {Designed and built a desktop PCB assembler running Marlin and OpenPNP.}
 
-      % \resumeSubItem{TikTok AI Content Generation}
-      % {Automated workflow to create popular social media content using ChatGPT-generated and web-scraped scripts and AI voiceover.}
   \resumeSubHeadingListEnd
 
-%
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
  \resumeSubHeadingListStart
-   \resumeSubItem{Languages}{: C/C++, Python, Java, MATLAB, Rust, LUA, P4, Verilog, SQL, MIPS, x86 Assembly}
-   \resumeSubItem{Programs}{: mmWave Studio, Quartus, STM32 Cube, Altium, KiCad}
-   \resumeSubItem{Technologies}{: ROS, RTOS, Kubernetes, Docker}
-   \resumeSubItem{Memberships}{: IEEE Eta Kappa Nu (HKN), IEEE MTTS, IEEE, ACM, AIAA}
+   \resumeSubItem{Software}{C/C++, Python, Java, MATLAB, Rust, LUA}
+   \resumeSubItem{Tooling}{Altium, KiCad, Quartus, STM32 Cube, MXUExpresso, mmWave Studio}
+   \resumeSubItem{Embedded}{Zephyr, Yocto, Buildroot}
+   \resumeSubItem{Memberships}{IEEE Eta Kappa Nu (HKN), IEEE MTTS, IEEE, ACM, AIAA}
  \resumeSubHeadingListEnd
 
 
