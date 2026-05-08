@@ -1,7 +1,5 @@
 \documentclass[letterpaper,12pt]{article}
 
-
-
 \usepackage[pdftex]{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -19,21 +17,17 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 
-% Use Times New Roman serif font (similar to Jake's resume)
+% Keep original font styling
 \usepackage{times}
-% Alternative serif options:
-% \usepackage{mathptmx} % Times-like font with better math support
-% \usepackage{charter} % Charter serif font
-% \usepackage{palatino} % Palatino serif font
 
 \setlength{\footskip}{4.4pt}
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Original margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -46,13 +40,14 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Original section formatting
 \titleformat{\section}{
   \vspace{-15pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
+
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
@@ -89,134 +84,170 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{
+  \resumeItem{#1}{#2}\vspace{-6pt}
+}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt,parsep=0pt,partopsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=*,label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+\begin{itemize}[topsep=0pt,parsep=0pt,partopsep=0pt]
+}
+
+\newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-1pt}
+}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CV STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 %----------HEADING-----------------
+
 \begin{center}
     \textbf{\huge Joseph Telaak} \\ \vspace{6pt}
-    704-351-7396 $|$ \href{mailto:jttelaak04@gmail.com}{\underline{jttelaak04@gmail.com}} $|$ 
+    704-351-7396 $|$
+    \href{mailto:jttelaak04@gmail.com}{\underline{jttelaak04@gmail.com}} $|$
     \href{https://linkedin.com/in/jtelaak/}{\underline{linkedin.com/in/jtelaak}}
 \end{center}
 
 %-----------EDUCATION-----------------
+
 \vspace{0.5pt}
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheadingEdu
-      {University of South Carolina}{Columbia, SC}
-      {BSE in Computer Engineering, Leadership Distinction in Research (GPA: 3.61)}{Aug. 2022 -- Dec. 2024}
-    
-    % \resumeSubheadingEdu
-    %   {South Carolina Governor's School for Science and Mathematics (SCGSSM)}{Hartsville, SC}
-    %   {High School Diploma, Concentration in CS and Math}{Aug. 2020 - May 2022}
-  \resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+
+\resumeSubheadingEdu
+{University of South Carolina}{Columbia, SC}
+{BSE in Computer Engineering, Leadership Distinction in Research}{Aug. 2022 -- Dec. 2024}
+
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
+
 \vspace{0.5pt}
 \section{Experience}
-  \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Chief Executive Officer}{Dec. 2024 - Present}
-      {Parkeze Inc.}{Columbia, SC}
-      \resumeItemListStart
-        \resumeItemLine{Ported the LoRaWAN gateway stack to Zephyr RTOS with custom high-availability features.}
-        \resumeItemLine{Developed sensor firmware integrating magnetometer and mmWave radar for vehicle occupancy detection.}
-        \resumeItemLine{Architected cloud-native backend with Kafka ingestion pipeline supporting real-time streaming to 1000+ users.}
-        \resumeItemLine{Built analytics platform using React, GraphQL, and TimescaleDB with custom Keycloak IAM extensions.}
-        \resumeItemLine{Created CI/CD pipeline for integration testing and blue/green deployment on Kubernetes.}
-        \resumeItemLine{Involved in all aspects of the business including fundraising, sales, and customer support.}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {Research Assistant}{Feb. 2023 - Dec. 2024}
-      {USC Systems Research on X Lab}{Columbia, SC}
-      \resumeItemListStart
-        \resumeItemLine{Developed firmware for live data streaming from TI IWR series 77--81 GHz mmWave radar SoCs.}
-        \resumeItemLine{Implemented contactless vital sign monitoring via chest-wall vibration analysis, validated against ECG.}
-        \resumeItemLine{Co-authored research on novel mmWave radar algorithms for 3D vehicle and pedestrian detection.}
-        \resumeItemLine{Designed FPGA-based data collection infrastructure for multi-radar synchronization and high-throughput capture.}
-        \resumeItemLine{Secured research funding through competitive grant proposals.}
-      \resumeItemListEnd
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Project Lead}{Jan. 2022 - Feb. 2023}
-      {SCGSSM Autonomous Golf Cart}{Hartsville, SC}
-      \resumeItemListStart
-        \resumeItemLine{Engineered a complete ADAS control module for steering, throttle, and braking actuation.}
-        \resumeItemLine{Designed custom Nvidia Jetson carrier board with multi-channel analog video capture and ADC interfacing.}
-        \resumeItemLine{Implemented real-time computer vision pipeline for obstacle detection, sign recognition, and lane tracking.}
-        \resumeItemLine{Integrated CAN bus and low-level actuator control for drive-by-wire operation of the vehicle platform.}
-      \resumeItemListEnd
+\resumeSubheading
+{Chief Executive Officer}{Dec. 2024 -- Present}
+{Parkeze Inc.}{Columbia, SC}
 
-    % \resumeSubheading
-    %   {Research Assistant}{Summer 2021}
-    %   {USC Cyberinfrastructure Lab}{Columbia, SC}
-    %   \resumeItemListStart
-    %     \resumeItemLine{Automated equipment configuration, throughput testing, and packet loss measurements in networks.}
-    %     \resumeItemLine{Created an on-switch webserver load balancer in P4.}
-    %   \resumeItemListEnd
+\resumeItemListStart
+\resumeItemLine{Ported the LoRaWAN gateway stack to Zephyr RTOS with custom high-availability features.}
+\resumeItemLine{Developed sensor firmware integrating magnetometer and mmWave radar for vehicle occupancy detection.}
+\resumeItemLine{Architected Kafka-based telemetry backend supporting real-time occupancy updates for 1000+ concurrent users.}
+\resumeItemLine{Built real-time analytics dashboard with React, GraphQL, and TimescaleDB.}
+\resumeItemLine{Created CI/CD pipeline for integration testing and blue/green deployment on Kubernetes.}
+\resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+\resumeSubheading
+{Research Assistant}{Feb. 2023 -- Dec. 2024}
+{USC Systems Research on X Lab}{Columbia, SC}
 
-%-----------VOLUNTEERING-----------------
+\resumeItemListStart
+\resumeItemLine{Developed firmware for live data streaming from TI IWR series 77--81 GHz mmWave radar SoCs.}
+\resumeItemLine{Designed FPGA-based infrastructure for multi-radar synchronization and high-throughput capture.}
+\resumeItemLine{Implemented contactless vital sign monitoring via chest-wall vibration analysis validated against ECG.}
+\resumeItemLine{Co-authored research on mmWave radar algorithms for 3D vehicle and pedestrian detection.}
+\resumeItemLine{Secured research funding through competitive grant proposals.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Project Lead}{Jan. 2022 -- Feb. 2023}
+{SCGSSM Autonomous Golf Cart}{Hartsville, SC}
+
+\resumeItemListStart
+\resumeItemLine{Engineered ADAS control systems for steering, throttle, and braking actuation.}
+\resumeItemLine{Designed custom Nvidia Jetson carrier board with analog video capture and ADC interfacing.}
+\resumeItemLine{Implemented real-time computer vision pipeline for obstacle detection and lane tracking.}
+\resumeItemLine{Integrated CAN bus and low-level actuator control for drive-by-wire operation.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------------
+
 \vspace{0.5pt}
 \section{Leadership}
-  \resumeSubHeadingListStart
-    % \resumeSubheadingLeadership
-    %   {SCGSSM Board of Directors}{Hartsville, SC}
-    %   {Alumni Association Engagement Committee Member}{Jul. 2023 - Present}
-    \resumeSubheadingLeadership
-      {FIRST Robotics}{Columbia, SC}
-      {FIRST Technical Advisor, Judge, Robot Inspector}{Jan. 2022 - May 2025}
 
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+
+\resumeSubheadingLeadership
+{FIRST Robotics}{Columbia, SC}
+{FIRST Technical Advisor, Judge, Robot Inspector}{Jan. 2022 -- May 2025}
+
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
+
 \vspace{0.5pt}
 \section{Selected Projects}
-  \resumeSubHeadingListStart
 
-    \resumeSubItem{LLM Voice Assistant}
-      {Far-field mic array with XMOS DSP, Zephyr RTOS on i.MXRT, ESP32 Wi-Fi NIC, multi-chip OTA, and real-time audio streaming to an LLM inference pipeline.}
+\resumeSubHeadingListStart
 
-    \resumeSubItem{Agentic Audio Streamer}
-      {Multi-room audio system using SigmaDSP, DACs, and Raspberry Pi CM5 with Spotify Connect and a custom LLM control API.}
+\resumeSubItem
+{LLM Voice Assistant}
+{Far-field mic array with XMOS DSP, Zephyr RTOS on i.MXRT, ESP32 Wi-Fi NIC, multi-chip OTA, and real-time audio streaming to an LLM inference pipeline.}
 
-    \resumeSubItem{PiSwitch}
-      {7-port router/switch with custom ASIC controller, web UI, and out-of-band management interface.}
+\resumeSubItem
+{Agentic Audio Streamer}
+{Multi-room audio system using SigmaDSP, DACs, Raspberry Pi CM5, Spotify Connect, and a custom LLM control API.}
 
-    \resumeSubItem{RISCv CPU}
-      {Pipelined RISC-V CPU with GPIO peripheral support implemented on FPGA in SystemVerilog.}
+\resumeSubItem
+{PiSwitch}
+{7-port managed router/switch with custom ASIC controller, VLAN support, web UI, and out-of-band management.}
 
-    \resumeSubItem{Pick-n-Place Machine}
-      {Designed and built a desktop PCB assembly machine running Marlin firmware and OpenPNP vision software.}
+\resumeSubItem
+{RISC-V CPU}
+{5-stage pipelined RISC-V CPU with GPIO peripheral support implemented on FPGA in SystemVerilog.}
 
-  \resumeSubHeadingListEnd
+\resumeSubItem
+{Pick-n-Place Machine}
+{Desktop PCB assembly machine with OpenPNP vision alignment and automated SMT placement.}
 
-%--------PROGRAMMING SKILLS------------
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+
 \vspace{0.5pt}
 \section{Skills}
- \resumeSubHeadingListStart
-   \resumeSubItem{Languages}{C/C++, Python, Rust, Java, JavaScript/TypeScript, MATLAB, LUA}
-   \resumeSubItem{Embedded}{Zephyr RTOS, Yocto, Buildroot, FreeRTOS, LoRaWAN, I2C, SPI, UART, CAN, USB}
-   \resumeSubItem{Hardware}{Altium, KiCad, Quartus, STM32 Cube, MCUXpresso, mmWave Studio, JTAG, oscilloscope}
-   \resumeSubItem{Systems}{Linux, Kubernetes, Docker, Kafka, GraphQL, PostgreSQL, CI/CD, Git}
-   \resumeSubItem{Memberships}{IEEE Eta Kappa Nu (HKN), IEEE MTTS, IEEE, ACM, AIAA}
- \resumeSubHeadingListEnd
 
+\resumeSubHeadingListStart
+
+\resumeSubItem
+{Languages}
+{C/C++, Python, Rust, Java, JavaScript/TypeScript, MATLAB, Lua}
+
+\resumeSubItem
+{Embedded}
+{Zephyr RTOS, Yocto, Buildroot, FreeRTOS, LoRaWAN, I2C, SPI, UART, CAN, USB}
+
+\resumeSubItem
+{Hardware}
+{Altium, KiCad, Quartus, STM32Cube, MCUXpresso, mmWave Studio, JTAG, Oscilloscope}
+
+\resumeSubItem
+{Systems}
+{Linux, Kubernetes, Docker, Kafka, GraphQL, PostgreSQL, CI/CD, Git}
+
+\resumeSubItem
+{Memberships}
+{IEEE Eta Kappa Nu (HKN), IEEE MTTS, IEEE, ACM, AIAA}
+
+\resumeSubHeadingListEnd
 
 %-------------------------------------------
+
 \end{document}
