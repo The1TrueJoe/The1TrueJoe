@@ -48,6 +48,10 @@
 %-------------------------
 % Custom commands
 
+% A `% tags: a, b, c` comment directly under a \resumeSubheading is picked up by
+% the site build in The1TrueJoe/The1TrueJoe.github.io and rendered as that
+% entry's tag row. LaTeX ignores it, so the PDF is unchanged.
+
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
@@ -130,6 +134,7 @@
 \resumeSubheadingEdu
 {University of South Carolina}{Columbia, SC}
 {BSE in Computer Engineering, Leadership Distinction in Research}{Aug. 2022 -- Dec. 2024}
+% tags: Computer Engineering, BSE, Research Distinction
 
 \resumeSubHeadingListEnd
 
@@ -143,6 +148,7 @@
 \resumeSubheading
 {Chief Executive Officer}{Dec. 2024 -- Present}
 {Parkeze Inc.}{Columbia, SC}
+% tags: IoT, LoRaWAN, Zephyr RTOS, Kafka, React, GraphQL, TimescaleDB, Kubernetes, PCB Design
 
 \resumeItemListStart
 \resumeItemLine{Ported the LoRaWAN gateway stack to Zephyr RTOS with custom high-availability features.}
@@ -155,6 +161,7 @@
 \resumeSubheading
 {Research Assistant}{Feb. 2023 -- Dec. 2024}
 {USC Systems Research on X Lab}{Columbia, SC}
+% tags: mmWave Radar, FPGA, Embedded C, Python, MATLAB, Signal Processing
 
 \resumeItemListStart
 \resumeItemLine{Developed firmware for live data streaming from TI IWR series 77--81 GHz mmWave radar SoCs.}
@@ -167,6 +174,7 @@
 \resumeSubheading
 {Project Lead}{Jan. 2022 -- Feb. 2023}
 {SCGSSM Autonomous Golf Cart}{Hartsville, SC}
+% tags: Nvidia Jetson, ROS, Computer Vision, PCB Design, C++, CAN Bus
 
 \resumeItemListStart
 \resumeItemLine{Engineered ADAS control systems for steering, throttle, and braking actuation.}
