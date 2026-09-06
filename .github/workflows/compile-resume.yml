@@ -1,0 +1,45 @@
+# GitHub Pages serves this repository straight from the main branch, so the PDFs
+# have to be committed, not uploaded as an artifact. Recompile them whenever the
+# LaTeX changes and push the result back.
+#
+# This replaces main.yml, which uploaded a Pages artifact this repo never used
+# and had been failing since actions/upload-artifact v3 was retired.
+name: Compile résumé
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - resume.tex
+      - cv.tex
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            resume.tex
+            cv.tex
+
+      # Only the .tex files trigger this workflow, so pushing a .pdf here cannot
+      # start another run.
+      - name: Commit the PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resume.pdf cv.pdf
+          if git diff --staged --quiet; then
+            echo "PDFs unchanged"
+            exit 0
+          fi
+          git commit -m "Recompile resume.pdf and cv.pdf"
+          git push
