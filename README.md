@@ -36,3 +36,9 @@ More at [PROJECTS.md](PROJECTS.md), and writeups on [telaak.dev](https://telaak.
 [telaak.dev](https://telaak.dev/#resume): that site fetches this file at build time and
 parses it, so the page and the PDF can never disagree. A `% tags: a, b, c` comment under
 a `\resumeSubheading` becomes that entry's tag row on the site and is invisible to LaTeX.
+
+Editing the résumé updates both. Pushing here compiles the PDF and, via
+[`notify-site.yml`](.github/workflows/notify-site.yml), tells telaak.dev to rebuild. That
+ping needs a repository secret `SITE_DISPATCH_TOKEN` — a fine-grained PAT with
+*Actions: read & write* on `The1TrueJoe/The1TrueJoe.github.io`. Without it the site still
+picks the change up on its nightly build.

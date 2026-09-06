@@ -1,0 +1,39 @@
+# telaak.dev renders its Résumé section straight from resume.tex in this
+# repository, so a résumé edit here should show up there. GitHub does not let a
+# push in one repository trigger a workflow in another on its own, so ping it.
+#
+# Setup: create a fine-grained personal access token with Actions: read & write
+# on The1TrueJoe/The1TrueJoe.github.io, and save it here as the repository
+# secret SITE_DISPATCH_TOKEN. Without it this job skips quietly — the site also
+# rebuilds nightly, so the résumé is never more than a day stale.
+name: Notify site of résumé change
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - resume.tex
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for the token
+        id: token
+        run: echo "present=${{ secrets.SITE_DISPATCH_TOKEN != '' }}" >> "$GITHUB_OUTPUT"
+
+      - name: Ping telaak.dev to rebuild
+        if: steps.token.outputs.present == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
+        run: |
+          gh api repos/The1TrueJoe/The1TrueJoe.github.io/dispatches \
+            --method POST \
+            --field event_type=resume-updated
+
+      - name: Explain the skip
+        if: steps.token.outputs.present != 'true'
+        run: |
+          echo "::notice::SITE_DISPATCH_TOKEN is not set, so telaak.dev was not pinged." \
+               "It will pick this résumé up on its nightly build."
