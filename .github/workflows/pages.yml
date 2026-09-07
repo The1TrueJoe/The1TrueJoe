@@ -74,3 +74,51 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # telaak.dev renders its Résumé section from the resume.json this workflow
+  # just published, so it is told to rebuild — but only once that file is
+  # actually live, which is why this needs `deploy` rather than running beside
+  # it.
+  #
+  # The trigger is a force-pushed annotated tag rather than an API call: a
+  # deploy key can push over SSH but cannot authenticate against the REST API,
+  # and unlike a token it never expires. A tag is a ref, not a commit, so
+  # nothing is added to that repository's history. It has to be *annotated* —
+  # a lightweight tag pointing where it already pointed is a no-op, and no push
+  # event would fire.
+  #
+  # Setup: SITE_DEPLOY_KEY holds the private half of a keypair whose public half
+  # is a write-enabled deploy key on The1TrueJoe/The1TrueJoe.github.io. Without
+  # the secret this job says so and stops; the site can still be rebuilt by hand
+  # from its Actions tab.
+  publish:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tell telaak.dev to rebuild
+        env:
+          SITE_DEPLOY_KEY: ${{ secrets.SITE_DEPLOY_KEY }}
+          SITE_REPO: git@github.com:The1TrueJoe/The1TrueJoe.github.io.git
+        run: |
+          set -euo pipefail
+
+          if [ -z "${SITE_DEPLOY_KEY:-}" ]; then
+            echo "::notice::SITE_DEPLOY_KEY is not set, so telaak.dev was not rebuilt."
+            exit 0
+          fi
+
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SITE_DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
+
+          git clone --depth 1 --quiet "$SITE_REPO" site
+          cd site
+
+          # Identity for the tag object itself. No commit is created.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git tag -f -a resume-latest -m "résumé published $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push -f --quiet origin resume-latest
+          echo "pushed resume-latest -> $(git rev-parse --short HEAD)"
