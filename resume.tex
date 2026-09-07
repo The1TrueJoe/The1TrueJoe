@@ -48,9 +48,26 @@
 %-------------------------
 % Custom commands
 
-% A `% tags: a, b, c` comment directly under a \resumeSubheading is picked up by
-% the site build in The1TrueJoe/The1TrueJoe.github.io and rendered as that
-% entry's tag row. LaTeX ignores it, so the PDF is unchanged.
+% ---------------------------------------------------------------------------
+% `%%:` comments below declare how this document's macros map to data, so the
+% GitHub Action The1TrueJoe/resume-tex-action can publish resume.json alongside
+% the PDF and telaak.dev can render the Resume section from it. They are LaTeX
+% comments, so none of this reaches the PDF.
+%
+%   %%: section <name>            start collecting into that section
+%   %%: entry \macro = a, b, c    the macro's arguments, named in order
+%   %%: item \macro = list        append the argument to a list on the entry
+%   %%: tags a, b, c              tags for the entry above (not typeset anywhere)
+%
+% A field written `name[]` is split on commas. A declaration inside a section
+% overrides the global one for that section only.
+% ---------------------------------------------------------------------------
+
+%%: entry \resumeSubheading = role, dates, org, location
+%%: entry \resumeSubheadingEdu = school, location, degree, dates
+%%: entry \resumeSubheadingLeadership = org, location, role, dates
+%%: entry \resumeSubItem = name, description
+%%: item \resumeItemLine = bullets
 
 \newcommand{\resumeItem}[2]{
   \item\small{
@@ -127,6 +144,7 @@
 %-----------EDUCATION-----------------
 
 \vspace{0.5pt}
+%%: section education
 \section{Education}
 
 \resumeSubHeadingListStart
@@ -134,13 +152,14 @@
 \resumeSubheadingEdu
 {University of South Carolina}{Columbia, SC}
 {BSE in Computer Engineering, Leadership Distinction in Research}{Aug. 2022 -- Dec. 2024}
-% tags: Computer Engineering, BSE, Research Distinction
+%%: tags Computer Engineering, BSE, Research Distinction
 
 \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 
 \vspace{0.5pt}
+%%: section experience
 \section{Experience}
 
 \resumeSubHeadingListStart
@@ -148,7 +167,7 @@
 \resumeSubheading
 {Chief Executive Officer}{Dec. 2024 -- Present}
 {Parkeze Inc.}{Columbia, SC}
-% tags: IoT, LoRaWAN, Zephyr RTOS, Kafka, React, GraphQL, TimescaleDB, Kubernetes, PCB Design
+%%: tags IoT, LoRaWAN, Zephyr RTOS, Kafka, React, GraphQL, TimescaleDB, Kubernetes, PCB Design
 
 \resumeItemListStart
 \resumeItemLine{Ported the LoRaWAN gateway stack to Zephyr RTOS with custom high-availability features.}
@@ -161,7 +180,7 @@
 \resumeSubheading
 {Research Assistant}{Feb. 2023 -- Dec. 2024}
 {USC Systems Research on X Lab}{Columbia, SC}
-% tags: mmWave Radar, FPGA, Embedded C, Python, MATLAB, Signal Processing
+%%: tags mmWave Radar, FPGA, Embedded C, Python, MATLAB, Signal Processing
 
 \resumeItemListStart
 \resumeItemLine{Developed firmware for live data streaming from TI IWR series 77--81 GHz mmWave radar SoCs.}
@@ -174,7 +193,7 @@
 \resumeSubheading
 {Project Lead}{Jan. 2022 -- Feb. 2023}
 {SCGSSM Autonomous Golf Cart}{Hartsville, SC}
-% tags: Nvidia Jetson, ROS, Computer Vision, PCB Design, C++, CAN Bus
+%%: tags Nvidia Jetson, ROS, Computer Vision, PCB Design, C++, CAN Bus
 
 \resumeItemListStart
 \resumeItemLine{Engineered ADAS control systems for steering, throttle, and braking actuation.}
@@ -188,6 +207,7 @@
 %-----------LEADERSHIP-----------------
 
 \vspace{0.5pt}
+%%: section leadership
 \section{Leadership}
 
 \resumeSubHeadingListStart
@@ -200,6 +220,7 @@
 %-----------PROJECTS-----------------
 
 \vspace{0.5pt}
+%%: section projects
 \section{Selected Projects}
 
 \resumeSubHeadingListStart
@@ -233,6 +254,8 @@
 %-----------SKILLS-----------------
 
 \vspace{0.5pt}
+%%: section skills
+%%: entry \resumeSubItem = label, items[]
 \section{Skills}
 
 \resumeSubHeadingListStart

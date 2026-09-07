@@ -1,0 +1,101 @@
+# Builds everything this repository publishes, then deploys it to Pages.
+#
+# The PDFs are not in git — they are compiled here, so the site is always
+# serving the current résumé rather than whatever was last committed. resume.json
+# is extracted from the same resume.tex in the same job, which is what
+# telaak.dev renders its Résumé section from.
+#
+# Order matters: nothing is uploaded until the PDFs and the JSON exist.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it mid-publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile the PDFs
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            resume.tex
+            cv.tex
+
+      - name: Extract resume.json from resume.tex
+        uses: The1TrueJoe/resume-tex-action@v1
+        with:
+          file: resume.tex
+          output: resume.json
+
+      # If any of these are missing the deploy would silently publish a 404, so
+      # fail here instead.
+      - name: Check the build produced what Pages is meant to serve
+        run: |
+          for file in resume.pdf cv.pdf resume.json; do
+            if [ ! -s "$file" ]; then
+              echo "::error::$file is missing or empty after the build"
+              exit 1
+            fi
+            printf '%-14s %s bytes\n' "$file" "$(wc -c < "$file")"
+          done
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  # telaak.dev renders its Résumé section from the resume.json this workflow
+  # just published, so it is told to rebuild only once that file is actually
+  # live. Doing this as a separate workflow raced the deploy and rebuilt the
+  # site against the previous résumé.
+  #
+  # Needs a fine-grained PAT with Actions: read & write on
+  # The1TrueJoe/The1TrueJoe.github.io, saved here as SITE_DISPATCH_TOKEN.
+  # Without it this job skips and the site picks the change up nightly.
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - id: token
+        run: echo "present=${{ secrets.SITE_DISPATCH_TOKEN != '' }}" >> "$GITHUB_OUTPUT"
+
+      - name: Ping telaak.dev to rebuild
+        if: steps.token.outputs.present == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
+        run: |
+          gh api repos/The1TrueJoe/The1TrueJoe.github.io/dispatches \
+            --method POST \
+            --field event_type=resume-updated
+
+      - name: Explain the skip
+        if: steps.token.outputs.present != 'true'
+        run: |
+          echo "::notice::SITE_DISPATCH_TOKEN is not set, so telaak.dev was not pinged." \
+               "It will pick this résumé up on its nightly build."
