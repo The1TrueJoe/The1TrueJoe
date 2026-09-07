@@ -6,6 +6,11 @@
 # telaak.dev renders its Résumé section from.
 #
 # Order matters: nothing is uploaded until the PDFs and the JSON exist.
+#
+# Nothing here notifies telaak.dev. Triggering a build in another repository
+# needs a credential with write access, and that was not worth it for a file
+# that changes a few times a year — that site polls hourly instead, and skips
+# in seconds unless resume.json is newer than its last deploy.
 name: Pages
 
 on:
@@ -69,33 +74,3 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-
-  # telaak.dev renders its Résumé section from the resume.json this workflow
-  # just published, so it is told to rebuild only once that file is actually
-  # live. Doing this as a separate workflow raced the deploy and rebuilt the
-  # site against the previous résumé.
-  #
-  # Needs a fine-grained PAT with Actions: read & write on
-  # The1TrueJoe/The1TrueJoe.github.io, saved here as SITE_DISPATCH_TOKEN.
-  # Without it this job skips and the site picks the change up nightly.
-  notify:
-    needs: deploy
-    runs-on: ubuntu-latest
-    steps:
-      - id: token
-        run: echo "present=${{ secrets.SITE_DISPATCH_TOKEN != '' }}" >> "$GITHUB_OUTPUT"
-
-      - name: Ping telaak.dev to rebuild
-        if: steps.token.outputs.present == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
-        run: |
-          gh api repos/The1TrueJoe/The1TrueJoe.github.io/dispatches \
-            --method POST \
-            --field event_type=resume-updated
-
-      - name: Explain the skip
-        if: steps.token.outputs.present != 'true'
-        run: |
-          echo "::notice::SITE_DISPATCH_TOKEN is not set, so telaak.dev was not pinged." \
-               "It will pick this résumé up on its nightly build."
