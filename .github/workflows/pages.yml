@@ -73,7 +73,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   # telaak.dev renders its Résumé section from the resume.json this workflow
   # just published, so it is told to rebuild — but only once that file is
